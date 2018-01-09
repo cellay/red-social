@@ -24,6 +24,8 @@ function createPosts() {
     var postContainer = '<div>' + pPost + likeBtn + likeBtnColored + commentBtn + '</div>';
     // Agregar un párrafo de publicacíon que aparecerá en el perfil
     $(postSection).find('div').first().before(postContainer);
+    // Llamada de función para dar like
+    pressLike();
   });
 }
 
