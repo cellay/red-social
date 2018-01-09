@@ -21,11 +21,14 @@
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="#">Mi perfil</a>
+                        <a href="newsfeed.html" target="_blank">Noticias</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Salir</a>
                     </li>
                 </ul>
             </nav>
-            <h3 class="text-muted">Be creative</h3>
+            <h3 class="text-muted">beCreative</h3>
         </div>
     </header>
 
@@ -49,15 +52,24 @@
     <div class="">
       <!-- Área para escribir contenido de publicación -->
       <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="¿Qué arte quieres compartir hoy?"></textarea>
-      <input type="files" name="" value="">
+      <input type="file" name="" value="">
       <!-- Botón para publicar -->
-      <button type="send" name="button" class="center-block post-btn" id="post-btn">Send</button>
+      <button type="send" name="button" class="center-block post-btn" id="post-btn">Publicar</button>
 
     </div>
   </section>
 
-  <!-- Sección de fotos -->
-  <section class="photo-section">
+  <!-- Sección de fotos y publicaciones -->
+  <section class="photo-post-section">
+    <div>
+      <p>Primera publicación</p>
+      <a class="heart" href="#">
+        <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a>
+      <a class="colored-heart" href="#" hidden>
+        <img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart">
+      </a>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Comentar</button>
+    </div>
 
   </section>
 
@@ -66,6 +78,14 @@
     <p>&copy; 2016 Company, Inc.</p>
   </footer>
 
+  <!-- Modal de comentar -->
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
