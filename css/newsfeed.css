@@ -29,3 +29,7 @@ footer{
 .newsfeed-contact{
     margin-bottom: 30px;
 }
+.btn-primary{
+    padding: 10px;
+    border-radius: 5px;
+}
