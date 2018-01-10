@@ -18,7 +18,7 @@ header {
 }
 
 section, footer {
-  background-color: rgba(248, 177, 149, 0.7);
+  background-color: rgba(248, 177, 149, 0.3);
   box-shadow: 1px 1px 5px #6C567B;
 }
 
@@ -46,19 +46,36 @@ figcaption, p {
 }
 
 /* CLASES ESPECÍFICAS DE PERFIL */
+header h1 {
+  margin-left: 2%;
+}
+
+header a {
+  color: #fff;
+}
+
+header li{
+    font-family: 'Bellefair', serif;
+    font-size: 20px;
+}
+
 .profile-min {
-  background-color: rgba(248, 177, 149, 0.7);
+  background-color: rgba(248, 177, 149, 0.3);
   box-shadow: 1px 1px 5px #6C567B;
   padding: 1.5em;
 }
 
 .user-picture {
   border: 3px solid #fff;
-  height: 18%;
+  height: 150px;
+  width: 150px;
 }
 
 .post-section {
   padding: 1.5em;
+  background-image: url('../assets/images/imagen1.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .post-txtarea {
@@ -66,19 +83,42 @@ figcaption, p {
   width: 90%;
 }
 
+.upload-photos {
+  margin-left: 5%;
+}
+
 .photo-post-section {
   padding: 1.5em;
 }
 
+.time-indicator, .heart, .colored-heart {
+  margin-right: 1em;
+}
+
+.heart:hover, .colored-heart:hover, .comment-bubble:hover, .follow:hover {
+  box-shadow: 1px 1px 5px #555;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.comment-side {
+  margin-top: 1em;
+}
+
+#comment-btn {
+  margin-left: 5%;
+}
+
 .photo-profile .pic-test {
   width: 25%;
+  margin-right: 1em;
 }
 
-.post-container img {
+.post-container img, .follow img {
   width: 30px;
 }
-
-
 
 footer {
   color: #6C567B;

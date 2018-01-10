@@ -31,7 +31,7 @@
                     </li>
                 </ul>
             </nav>
-            <h1 class="text-muted">beCreative</h1>
+            <h1>beCreative</h1>
         </div>
     </header>
 
@@ -41,8 +41,12 @@
           <div class="profile-con col-xs-12  col-md-12">
             <figure>
               <img class="center-block img-circle user-picture" src="../assets/images/velour.jpg" alt="user-picture">
+              <br>
               <figcaption class="text-center text-uppercase">
                 velour
+                <a class="follow" href="#">
+                  <img src="../assets/images/addcontact.svg">
+                </a>
               </figcaption>
             </figure>
           </div>
@@ -54,7 +58,9 @@
     <div>
       <!-- Área para escribir contenido de publicación -->
       <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="¿Qué arte quieres compartir hoy?"></textarea>
-      <input type="file" name="" value="">
+      <br>
+      <input type="file" name="" value="" class="upload-photos">
+      <br>
       <!-- Botón para publicar -->
       <button type="send" name="button" class="center-block post-btn" id="post-btn">Publicar</button>
     </div>
@@ -72,7 +78,8 @@
         <img class="pic-test"  src="../assets/images/night-glowns.jpg" alt="night-glowns">
         <img class="pic-test"  src="../assets/images/dog-velour.jpg" alt="dog-velour">
       </figure>
-      <span>12:25</span>
+      <br>
+      <span class="time-indicator">12:25</span>
       <!-- Ícono para dar like -->
       <a class="heart" href="#">
         <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart">
