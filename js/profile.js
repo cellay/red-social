@@ -33,10 +33,10 @@ function createPosts() {
     pressLike();
     // Llamada de función para quitar like
     pressUnLike();
-    // Llamada de función para crear comentario
-    createComments();
     // Llamada de función para desplegar sección donde se hace comentario
     showSectionToSendComment();
+    // Llamada de función para crear comentario
+    createComments();
   });
 }
 
@@ -82,7 +82,17 @@ function showSectionToSendComment() {
 
 /* FUNCIÓN PARA CREAR COMENTARIOS */
 function createComments() {
-
+  // Crear variables para obtener elementos
+  var commentBtn = $('#comment-btn');
+  var commentDisplaySection = $('.comment-display-section');
+  // Crear evento de publicar al dar clic en botón
+  $(commentBtn).on('click', function() {
+    // Capturar valor del área de texto
+    var commentTxtAreaValue = $('#comment-txtarea').val();
+    // Crear párrafo de publicación
+    var pComment = '<p class="center-block">' + commentTxtAreaValue + '</p>';
+    $(commentDisplaySection).append(pComment);
+  });
 }
 
 $(document).ready(begin);
