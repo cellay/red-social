@@ -5,7 +5,7 @@ function begin() {
   pressUnLike();
   showSectionToSendComment();
   createComments();
-}
+
 
 /* FUNCIÓN PARA CREAR PUBLICACIONES */
 function createPosts() {
@@ -94,5 +94,5 @@ function createComments() {
     $(commentDisplaySection).append(pComment);
   });
 }
-
+  
 $(document).ready(begin);

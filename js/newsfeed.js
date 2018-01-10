@@ -18,6 +18,6 @@ $(document).ready(function() {
   function addPost() {    
     var $time = moment().format('HH:mm');
     var $content = $textarea.val();
-    $('section').find('div:first').before('<div class="clearfix newsfeed-contact"><figure class= "col-sm-3"> <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile"></figure><p class="col-sm-9">' + $content + '</p><p class="time">' + $time + '</p></div>');
+    $('section').find('div:first').before('<div class="clearfix newsfeed-contact"><figure class= "col-sm-3"> <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile"></figure><p class="col-sm-9">' + $content + '</p><p class="time col-sm-1">' + $time + '</p></div>');
   }
 });
