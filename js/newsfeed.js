@@ -20,6 +20,7 @@ $(document).ready(function() {
     var $content = $textarea.val();
     $('section').find('div:first').before('<div class="clearfix newsfeed-contact"><figure class= "col-xs-3 col-sm-2"> <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile"></figure><h4 class="col-xs-2 col-sm-2">name</h4><span class="follow add-contact"><img src="../assets/images/addcontact.svg" alt="followers" class="icon-follow"></span><p class="col-xs-9 col-sm-10">' + $content + '</p><p class="time col-sm-offset-2 col-sm-1">' + $time + '</p><div class="icons"><span class="start-chat"><img src="../assets/images/chat.svg" alt="chat"></span><span><img src="../assets/images/heart.svg" alt="followers"></span></div></div>');
     createComment();
+    addComments();
   }
   showSectionToSendComment();
   showSectionToSendComment2();
@@ -29,10 +30,9 @@ $(document).ready(function() {
   function createComment() {
     var $startChat = $('.start-chat');
     if ($startChat) {
-      $('section').find('div:first').append('<div class="comment-area3 comments" hidden><textarea id="comment-txtarea placeholder="Comentario..."></textarea><button type="button" name="button" class="btn-coments" id="comment-btn">Comentar</button></div><div class= "comment-display-section"></div>');  
+      $('section').find('div:first').append('<div class="comment-area3 comments" hidden><textarea id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" class="btn-coments" id="comment-btn">Comentar</button></div><div class= "comment-display-section"></div>');  
       $startChat.on('click', function() {
         $('.comment-area3').toggle(); 
-        addComments();
       });
     }
   }
