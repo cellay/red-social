@@ -24,10 +24,10 @@
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="#">Mi perfil</a>
+                        <a href="profile.html" target="_blank">Mi perfil</a>
                     </li>
                     <li role="presentation">
-                        <a href="#">Salir</a>
+                        <a href="final.html" >Salir</a>
                     </li>
                 </ul>
             </nav>
@@ -40,13 +40,13 @@
             <div class="col-sm-3">
                 <div class="profile-div">
                     <img class="center-block img-circle" src="../assets/images/foto.jpg" alt="user-picture">
-                    <h4 class="text-center">nombre</h4>
+                    <h3 class="text-center">Designer</h3>
                 </div>
             </div>
             <div class="col-sm-8 newsfeed">
                 <div class="area-post">
                     <div class="form-group">
-                        <textarea class="form-control" rows="5" id="textarea"></textarea>
+                        <textarea class="form-control" rows="4" id="textarea" placeholder="Expresa tu creatividad..."></textarea>
                         <button id="post" class="btn">Publicar</button>
                     </div>
                 </div>
@@ -56,9 +56,9 @@
                         <figure class="col-xs-3 col-sm-2">
                             <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile">
                         </figure>
-                        <h4 class="col-xs-2 col-sm-2">name</h4>
-                        <span class="follow">
-                            <img src="../assets/images/addcontact.svg" alt="followers" class="icon-follow">
+                        <h4 class="col-xs-2 col-sm-3"><a href="profile1.html"></a>paper my life</h4>
+                        <span class="follow"><a href="#" data-toggle="tooltip" title="Seguir">
+                            <img src="../assets/images/addcontact.svg" alt="followers" class="icon-follow"></a>
                         </span>
                         <p class="col-xs-9 col-sm-10">Los dos van de la mano ya que el diseño y el arte se realizan con un fin aunque con otros parámetros.
                             Tanto artistas como diseñadores crean composiciones visuales usando una base de conocimiento
@@ -66,11 +66,11 @@
                         </p>
                         <p class="time col-sm-offset-2 col-sm-1">12:10</p>
                         <div class="icons">
-                            <span class="comment">
+                            <span class="comment comment1">
                                 <img src="../assets/images/chat.svg" alt="chat">
                             </span>
-                            <span>
-                                <img src="../assets/images/heart.svg" alt="heart">
+                            <span><a href="#" data-toggle="tooltip" title="Me encanta">
+                                <img src="../assets/images/heart.svg" alt="heart"></a>
                             </span>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                         <!-- Área para escribir comentario -->
                         <textarea name="name" class="post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea>
                         <!-- Botón para enviar comentario -->
-                        <button type="button" name="button" id="comment-btn">Comentar</button>
+                        <button type="button" name="button" class="btn-coments" id="comment-btn">Comentar</button>
                     </div>
                     <!-- Sección donde aparecerá el comentario hecho -->
                     <div class="comment-display-section">
@@ -89,9 +89,9 @@
                         <figure class="col-xs-3 col-sm-2">
                             <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile">
                         </figure>
-                        <h4 class="col-xs-2 col-sm-2">name</h4>
-                        <span class='follow'>
-                            <img src="../assets/images/addcontact.svg" alt="followers" class="icon-follow">
+                        <h4 class="col-xs-2 col-sm-2 text-upper case"><a href="profile.html"></a> velour</h4>
+                        <span class='follow'><a href="#" data-toggle="tooltip" title="Seguir">
+                            <img src="../assets/images/addcontact.svg" alt="followers" class="icon-follow"></a>
                         </span>
                         <p class="col-xs-9 col-sm-10">Los dos van de la mano ya que el diseño y el arte se realizan con un fin aunque con otros parámetros.
                             Tanto artistas como diseñadores crean composiciones visuales usando una base de conocimiento
@@ -99,19 +99,19 @@
                         </p>
                         <p class="time col-sm-offset-2 col-sm-1">12:10</p>
                         <div class="icons">
-                            <span class="comment">
+                            <span class="comment comment2">
                                 <img src="../assets/images/chat.svg" alt="chat">
                             </span>
-                            <span>
-                                <img src="../assets/images/heart.svg" alt="followers">
+                            <span><a href="#" data-toggle="tooltip" title="Me encanta">
+                                <img src="../assets/images/heart.svg" alt="heart"></a>             
                             </span>
                         </div>
                         <!-- Sección para realizar comentario -->
-                        <div class="comment-area comments" hidden>
+                        <div class="comment-area2 comments" hidden>
                             <!-- Área para escribir comentario -->
                             <textarea name="name" class="post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea>
                             <!-- Botón para enviar comentario -->
-                            <button type="button" name="button" id="comment-btn">Comentar</button>
+                            <button type="button" name="button"class="btn-coments" id="comment-btn">Comentar</button>
                         </div>
                         <!-- Sección donde aparecerá el comentario hecho -->
                         <div class="comment-display-section">
@@ -124,7 +124,6 @@
         <footer class="footer text-center">
             <p>&copy; 2016 Company, Inc.</p>
         </footer>
-
     </div>
     <!-- /container -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
