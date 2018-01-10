@@ -45,6 +45,17 @@ figcaption, p {
   font-weight: bold;
 }
 
+.container-flex-column {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+	padding: 2em;
+}
+
+.vh100 {
+	height: 100vh;
+}
+
 /* CLASES ESPECÍFICAS DE PERFIL */
 header h1 {
   margin-left: 2%;
