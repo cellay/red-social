@@ -77,4 +77,16 @@ input[type="email"], input[type="password"] {
 .btn:hover {
   box-shadow: 1px 1px 5px #555;
   background-color: whitesmoke;
-  }
+}
+
+.login-facebook-google {
+  color: #6C567B;
+  font-family: 'Bellefair', serif;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.login-facebook-google img {
+  height: 50px;
+  align-self: center;
+} 
