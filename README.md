@@ -23,14 +23,14 @@ El reto consiste en realizar una red social mobile friendly con la ayuda del fra
 ![Sin titulo](assets/docs/newsfeed-view.png)
 
 ### Vista de perfil con opción a agregar contacto, publicar, lugar para subir fotos, comentar y dar y quitar me gusta
-![Sin titulo](assets/docs/profile.jpg)
+![Sin titulo](assets/docs/profile.JPG)
 
 
 #### Vista para agregar contacto
-![Sin titulo](assets/docs/add-contact.jpg)
+![Sin titulo](assets/docs/add-contact.JPG)
 
 #### Vista final de cerrar sesión
-![Sin titulo](assets/docs/log-out.jpg)
+![Sin titulo](assets/docs/log-out.JPG)
 
 ## Autora
 * Isabel Campos
