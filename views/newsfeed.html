@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
             <h3 class="text-muted">beCreative</h3>
         </div>
     </header>
-
+    <!--contenido-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -41,14 +42,13 @@
                 </div>
             </div>
             <div class="col-sm-8 newsfeed">
-                <div>
+                <div class="area-post">
                     <div class="form-group">
                         <textarea class="form-control" rows="5" id="textarea"></textarea>
                         <button id="post" class="btn-primary">publicar</button>
                     </div>
                 </div>
                 <section>
-                    
                     <div class="clearfix newsfeed-contact">
                         <figure class="col-sm-3">
                             <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile">
@@ -58,6 +58,17 @@
                             compartido.
                         </p>
                         <p class="time col-sm-1">12:25</p>
+                        <div class="icons">
+                            <span>
+                                <img src="../assets/images/chat.svg" alt="chat">
+                            </span>
+                            <span>
+                                <img src="../assets/images/addcontact.svg" alt="followers">
+                            </span>
+                            <span>
+                                <img src="../assets/images/heart.svg" alt="followers">
+                            </span>
+                        </div>
                     </div>
                     <div class="clearfix newsfeed-contact">
                         <figure class="col-sm-3">
@@ -68,12 +79,23 @@
                             compartido.
                         </p>
                         <p class="time col-sm-1">12:10</p>
+                        <div class="icons">
+                            <span>
+                                <img src="../assets/images/chat.svg" alt="chat">
+                            </span>
+                            <span>
+                                <img src="../assets/images/addcontact.svg" alt="followers">
+                            </span>
+                            <span>
+                                <img src="../assets/images/heart.svg" alt="followers">
+                            </span>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
-
+    <!--footer-->
     <footer class="footer text-center">
         <p>&copy; 2016 Company, Inc.</p>
     </footer>
@@ -82,7 +104,7 @@
     <!-- /container -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>    
+        crossorigin="anonymous"></script>
     <script src="../js/moment.js"></script>
     <script src="../js/newsfeed.js"></script>
 </body>
