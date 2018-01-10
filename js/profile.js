@@ -23,7 +23,7 @@ function createPosts() {
     // crear botones de gustar y comentar
     var likeBtn = '<a class="heart" href="#"><img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a>';
     var likeBtnColored = '<a class="colored-heart" href="#" hidden><img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart"></a>';
-    var commentBubble = '<a class="comment-bubble" href="#"><img src="https://image.flaticon.com/icons/svg/134/134784.svg"></a>';
+    var commentBubble = '<a class="comment-bubble" href="#"><img src="../assets/images/chat.svg"></a>';
     var commentSide = '<div class="comment-side" hidden><textarea name="name" class="center-block post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" id="comment-btn">Comentar</button></div>' ;
     // Crear espacio para agregar publicación con botones de gustar y comentar
     var postContainer = '<div class="post-container">' + pPost + likeBtn + likeBtnColored + commentBubble + commentSide + '</div>';
