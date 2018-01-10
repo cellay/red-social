@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/newsfeed.css">
+    <title>Final Product</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="bell">
+                        <a href="#">
+                            <img src="../assets/images/bell.svg" alt="bell">
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Mi perfil</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">Salir</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">beCreative</h3>
+        </div>
+    </header>
+    <!--contenido-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="profile-div">
+                    <img class="center-block img-circle" src="http://www.gigtime.co/assets/fallback/default_user_avatar_huge.jpg" alt="user-picture">
+                    <h4 class="text-center">nombre</h4>
+                </div>
+            </div>
+            <div class="col-sm-8 newsfeed">
+                <div class="area-post">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="textarea"></textarea>
+                        <button id="post" class="btn-primary">publicar</button>
+                    </div>
+                </div>
+                <section>
+                    <div class="clearfix newsfeed-contact">
+                        <figure class="col-sm-3">
+                            <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile">
+                        </figure>
+                        <p class="col-sm-9">Los dos van de la mano ya que el diseño y el arte se realizan con un fin aunque con otros parámetros.
+                            Tanto artistas como diseñadores crean composiciones visuales usando una base de conocimiento
+                            compartido.
+                        </p>
+                        <p class="time col-sm-1">12:25</p>
+                        <div class="icons">
+                            <span>
+                                <img src="../assets/images/chat.svg" alt="chat">
+                            </span>
+                            <span>
+                                <img src="../assets/images/addcontact.svg" alt="followers">
+                            </span>
+                            <span>
+                                <img src="../assets/images/heart.svg" alt="followers">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="clearfix newsfeed-contact">
+                        <figure class="col-sm-3">
+                            <img src="../assets/images/profile-user.svg" class="img-circle contact" alt="Profile">
+                        </figure>
+                        <p class="col-sm-9">Los dos van de la mano ya que el diseño y el arte se realizan con un fin aunque con otros parámetros.
+                            Tanto artistas como diseñadores crean composiciones visuales usando una base de conocimiento
+                            compartido.
+                        </p>
+                        <p class="time col-sm-1">12:10</p>
+                        <div class="icons">
+                            <span>
+                                <img src="../assets/images/chat.svg" alt="chat">
+                            </span>
+                            <span>
+                                <img src="../assets/images/addcontact.svg" alt="followers">
+                            </span>
+                            <span>
+                                <img src="../assets/images/heart.svg" alt="followers">
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer text-center">
+        <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+
+    </div>
+    <!-- /container -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/newsfeed.js"></script>
+</body>
+
+</html>
