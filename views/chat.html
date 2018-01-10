@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CHAT</title>
+</head>
+<body>
+  <form class="" action="index.html" method="post">
+    <div action="">
+      <label for="name">User Name</label>
+      <input type="text" id="name">
+    </div>
+    <div class="">
+      <label for="message">Message</label>
+      <textarea rows="8" cols="80" id="message"></textarea>
+    </div>
+    <button type="button" name="button" id="send-btn">Send</button>
+  </form>
+
+  <ul id="msg-list">
+
+  </ul>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD4dRK-qtO8tr4mDqgvK_xZQh0lFFpOAlM",
+    authDomain: "social-network-chat.firebaseapp.com",
+    databaseURL: "https://social-network-chat.firebaseio.com",
+    projectId: "social-network-chat",
+    storageBucket: "social-network-chat.appspot.com",
+    messagingSenderId: "1078818493755"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/chat.js">
+
+</script>
+</body>
+</html>

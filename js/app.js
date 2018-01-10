@@ -64,6 +64,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 
+
 // Inicio de sesión con Google y Facebook
 
 var user = null;
@@ -111,5 +112,4 @@ $('#login-google').on('click', function(event) {
     // ...
   });
 });
-
 

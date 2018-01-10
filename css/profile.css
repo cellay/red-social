@@ -1,26 +1,92 @@
 /* CLASES REUTILIZABLES */
 * {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.bell img{
+
+.bell img {
     width: 20px;
 }
 
+header {
+  background:linear-gradient(to bottom right, #6C567B, #C06C84);
+  background-position: left top;
+  color: whitesmoke;
+  font-family: 'Megrim', cursive;
+}
+
+section, footer {
+  background-color: rgba(248, 177, 149, 0.3);
+  box-shadow: 1px 1px 5px #6C567B;
+}
+
+button {
+  background: #6C567B;
+  border:none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 200;
+  transition: box-shadow .4s ease;
+  margin-bottom: 20px;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px #555;
+  background-color: whitesmoke;
+  color: #000;
+}
+
+figcaption, p {
+  color: #6C567B;
+  font-weight: bold;
+}
+
+.container-flex-column {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+	padding: 2em;
+}
+
+.vh100 {
+	height: 100vh;
+}
+
 /* CLASES ESPECÍFICAS DE PERFIL */
+header h1 {
+  margin-left: 2%;
+}
+
+header a {
+  color: #fff;
+}
+
+header li{
+    font-family: 'Bellefair', serif;
+    font-size: 20px;
+}
+
 .profile-min {
-  background-color: #3097d1;
+  background-color: rgba(248, 177, 149, 0.3);
+  box-shadow: 1px 1px 5px #6C567B;
   padding: 1.5em;
 }
 
 .user-picture {
   border: 3px solid #fff;
+  height: 150px;
+  width: 150px;
 }
 
 .post-section {
   padding: 1.5em;
+  background-image: url('../assets/images/imagen1.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .post-txtarea {
@@ -28,11 +94,53 @@
   width: 90%;
 }
 
-.photo-section {
-  background-color: #f5f8fa;
+.upload-photos {
+  margin-left: 5%;
+}
+
+.photo-post-section {
   padding: 1.5em;
 }
 
+.time-indicator, .heart, .colored-heart {
+  margin-right: 1em;
+}
+
+.heart:hover, .colored-heart:hover, .comment-bubble:hover, .follow:hover {
+  box-shadow: 1px 1px 5px #555;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.comment-side {
+  margin-top: 1em;
+}
+
+#comment-btn, .parrapgrah-comment {
+  margin-left: 5%;
+}
+
+.photo-profile .pic-test {
+  width: 25%;
+  margin-right: 1em;
+}
+
+.post-container img, .follow img {
+  width: 30px;
+}
+
 footer {
+  color: #6C567B;
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  height: 5vh;
   padding: 1.5em;
+}
+
+#contact-modal-content {
+  padding: 1em !important;
+  background-color: rgba(248, 177, 149, 0.8);
 }
