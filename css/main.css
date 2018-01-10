@@ -1,38 +1,81 @@
-/* CLASES REUTILIZABLES */
+/* CSS */
 * {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-.bell img{
-    width: 20px;
+
+header {
+  width: 100%;
+  background:linear-gradient(to bottom right, #6C567B, #C06C84);
+  background-position: left top;
+  color: whitesmoke;
+  /* font-family: 'VT323', monospace; */
+  /* font-family: 'Fredericka the Great', cursive; */
+  font-family: 'Megrim', cursive;
+  height: 10vh;
 }
 
-/* CLASES ESPECÍFICAS DE PERFIL */
-.profile-min {
-  background-color: #3097d1;
-  padding: 1.5em;
+body {
+  text-align: center;
+  background: transparent url('../assets/images/background-web.jpg');
 }
 
-.user-picture {
-  border: 3px solid #fff;
+.principal-view {
+  height: 85vh;
+  width: 100%;
+  color: #6C567B;
 }
 
-.post-section {
-  padding: 1.5em;
-}
-
-.post-txtarea {
-  margin-bottom: 1em;
-  width: 90%;
-}
-
-.photo-section {
-  background-color: #f5f8fa;
-  padding: 1.5em;
+section {
+  height: auto;
 }
 
 footer {
-  padding: 1.5em;
+  color: #6C567B;
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  height: 5vh;
 }
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-box {
+  text-align: justify;
+  background-color: rgba(248, 177, 149, 0.7);
+  font-family: 'Bellefair', serif;
+  box-shadow: 1px 1px 5px #6C567B;
+}
+
+.register-box {
+  background-color: rgba(248, 177, 149, 0.7);
+  box-shadow: 1px 1px 5px #6C567B;
+  font-family: 'Bellefair', serif;
+}
+
+input[type="email"], input[type="password"] {
+  border: 1px solid #bbb;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  }
+  
+.btn {
+  background: #6C567B;
+  border:none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 200;
+  transition: box-shadow .4s ease;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 5px #555;
+  background-color: whitesmoke;
+  }
+  
