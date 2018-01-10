@@ -43,34 +43,46 @@
               </figcaption>
             </figure>
           </div>
-
     </div>
   </section>
 
   <!-- Sección de creación de publicaciones -->
   <section class="post-section">
-    <div class="">
+    <div>
       <!-- Área para escribir contenido de publicación -->
       <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="¿Qué arte quieres compartir hoy?"></textarea>
       <input type="file" name="" value="">
       <!-- Botón para publicar -->
       <button type="send" name="button" class="center-block post-btn" id="post-btn">Publicar</button>
-
     </div>
   </section>
 
   <!-- Sección de fotos y publicaciones -->
   <section class="photo-post-section">
-    <div>
+    <div class="post-container">
+      <!-- Publicación -->
       <p>Primera publicación</p>
+      <!-- Ícono para dar like -->
       <a class="heart" href="#">
-        <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a>
+        <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart">
+      </a>
+      <!-- Ícono para dar like pintado -->
       <a class="colored-heart" href="#" hidden>
         <img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart">
       </a>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Comentar</button>
+      <!-- Ícono para comentar -->
+      <a class="comment-bubble" href="#">
+        <img src="https://image.flaticon.com/icons/svg/134/134784.svg">
+      </a>
+      <!-- Sección para realizar comentario -->
+      <div class="comment-side" hidden>
+        <!-- Área para escribir comentario -->
+        <textarea name="name" class="center-block post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea>
+        <!-- Botón para enviar comentario -->
+        <button type="button" name="button" id="comment-btn">Comentar</button>
+      </div>
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Comentar</button> -->
     </div>
-
   </section>
 
   <!-- Pie de página -->
@@ -79,13 +91,13 @@
   </footer>
 
   <!-- Modal de comentar -->
-  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
+  <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
       ...
+      </div>
     </div>
-  </div>
-</div>
+  </div> -->
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
