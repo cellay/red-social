@@ -107,7 +107,7 @@ header li{
   margin-top: 1em;
 }
 
-#comment-btn {
+#comment-btn, .parrapgrah-comment {
   margin-left: 5%;
 }
 
@@ -127,4 +127,9 @@ footer {
   font-weight: 800;
   height: 5vh;
   padding: 1.5em;
+}
+
+#contact-modal-content {
+  padding: 1em !important;
+  background-color: rgba(248, 177, 149, 0.8);
 }
