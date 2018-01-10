@@ -33,7 +33,7 @@ El reto consiste en realizar una red social mobile friendly con la ayuda del fra
 ![Sin titulo](assets/docs/log-out.JPG)
 
 ## Autora
-* Isabel Campos
+* Ornella Campos
 * Elizabeth Segura
 * Lizbeth Félix
 
