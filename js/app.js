@@ -43,6 +43,3 @@ $('#login').on('click', function (event) {
     alert('Ingresa o regístrate');
   }
 });
-
-
-
