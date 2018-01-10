@@ -5,7 +5,7 @@ function begin() {
   pressUnLike();
   showSectionToSendComment();
   createComments();
-
+}
 
 /* FUNCIÓN PARA CREAR PUBLICACIONES */
 function createPosts() {
@@ -90,9 +90,9 @@ function createComments() {
     // Capturar valor del área de texto
     var commentTxtAreaValue = $('#comment-txtarea').val();
     // Crear párrafo de publicación
-    var pComment = '<p class="center-block">' + commentTxtAreaValue + '</p>';
+    var pComment = '<p class="parrapgrah-comment">' + commentTxtAreaValue + '</p>';
     $(commentDisplaySection).append(pComment);
   });
 }
-  
+
 $(document).ready(begin);
