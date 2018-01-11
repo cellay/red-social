@@ -58,6 +58,7 @@ header li{
 } 
 .contact{
     width: 80px;
+    height: 80px;
 }
 .newsfeed-contact{
     margin-bottom: 30px;
@@ -92,6 +93,16 @@ header li{
 .icon-follow{
     width: 20px;
 }
+.container-icons{
+    box-sizing: border-box;
+    display: block;
+    height: 60px;
+    padding: 5px;
+
+}
+.icons span{
+    margin:2px 12px;
+}
 .icons span img{
     width: 30px;
 }
@@ -109,6 +120,9 @@ header li{
     width: 100%;
     height: auto;
 }
+.text{
+    margin-bottom: 5px;
+}
 .btn-coments{
     background: rgba(192, 108, 132, 0.692);
     border:none;
@@ -124,6 +138,9 @@ header li{
     color: #555;
     box-shadow: 1px 1px 5px #555;
     background-color: whitesmoke;
+}
+.created-area{
+    margin-left:-136px;
 }
 
 /*footer*/
