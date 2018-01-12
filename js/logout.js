@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 //Cerrando sesión
 $('#logout').on('click', function(event) {
   firebase.auth().signOut().then(function() {
-    $(location).attr('href', 'index.html');
+    $(location).attr('href', '../index.html');
   }).catch(function(error) {
     // An error happened.
   });
