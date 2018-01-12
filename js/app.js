@@ -49,11 +49,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     var uid = user.uid;
     var providerData = user.providerData;
     // ...
-    if(user!=null) {
-      $(location).attr('href', 'views/newsfeed.html'); //Direccionamos a la view de newsfeed
-    } else {
-      console-log('Ingresa');
-    }
+    $(location).attr('href', 'views/newsfeed.html'); //Direccionamos a la view de newsfeed
+   
     
 
   } else {
@@ -62,7 +59,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log('No has ingresado');
   }
 });
-
 
 
 // Inicio de sesión con Google y Facebook
@@ -113,3 +109,65 @@ $('#login-google').on('click', function(event) {
   });
 });
 
+$(document).ready(function() {
+    validEmail = false;
+    validPass = false;
+
+    function validateBtn() {
+      if (validEmail && validPass) {
+        $('div > button:eq( 0 )').attr('disabled', false);
+      };
+    }
+
+    function defaultBtn() {
+      $('div > button:eq( 0 )').attr('disabled', 'disabled');
+    }
+
+    $('#email').on('input', function(event) {
+      var constant = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
+      if (constant.test($(this).val())) {
+        validEmail = true;
+        validateBtn(); 
+      } else {
+        console.log('Ingrese un email válido');
+        defaultBtn();
+      }
+    });
+
+    $('#email-register').on('input', function (event) {
+      var constant = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
+      if (constant.test($(this).val())) {
+        validEmail = true;
+        validateBtn(); 
+      } else {
+        console.log('Ingrese un email válido');
+        defaultBtn();
+      }
+    });
+
+    
+
+    $('#pass').on('input', function (event) {
+      if ($(this).val().length >= 5) {
+        validPass = true;
+        validateBtn(); 
+      } else {
+        defaultBtn();
+        console.log('Ingrese una contraseña válida');
+      }
+    });
+
+    $('#pass-register').on('input', function (event) {
+      if ($(this).val().length >= 5) {
+        validPass = true;
+        validateBtn(); 
+      } else {
+        defaultBtn();
+        console.log('Ingrese una contraseña válida');
+      }
+    });
+
+    $('div > button:eq( 0 )').on('click', function(event) {
+      console.log('hola');
+    });
+});
