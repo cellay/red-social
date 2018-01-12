@@ -26,13 +26,14 @@
           placeat earum architecto! Reiciendis incidunt delectus expedita in fugit.</p>
       </section>
       <section class="col-sm-3 col-sm-offset-1 col-xs-10 col-xs-offset-1 d-flex register-box">
-        <form class="form-group d-flex">
+        <div class="form-group d-flex">
           <h3>¿Eres nuevo? Regístrate.</h3>
           <input type="email" placeholder="Email" id="email">
           <input type="password" placeholder="Password" id="pass">
-          <button class="btn" id="register">Sign up</button>
           <p class="col-sm-12">By signing up, you agree to our Terms & Privacy Policy.</p>
-        </form>
+          <button class="btn" id="register">Sign up</button>
+        </div>
+        
         <section class="row">
           <p class="col-xs-12">¿Tienes una cuenta?
             <a data-toggle="modal" data-target="#myModal">Ingresa</a>
@@ -56,12 +57,12 @@
           <h4 class="modal-title">Inicia sesión</h4>
         </div>
         <div class="modal-body">
-          <form class="form-group d-flex">
+          <div class="form-group d-flex">
             <input class="" type="email" placeholder="Email" id="email-register">
             <input class="" type="password" placeholder="Password" id="pass-register">
-            <button class="btn" id="login">Sign in</button>
             <p class="col-sm-12">Welcome again!</p>
-          </form>
+            <button class="btn" id="login">Sign in</button>
+          </div>
         </div>
         <div class="modal-footer container-fluid">
           <div class="row d-flex login-facebook-google">
@@ -84,12 +85,7 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-    <!-- firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
-  <!-- Fin firebase -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
   crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
