@@ -37,7 +37,11 @@ header li{
 }
 .profile-div img{
    width: 150px;
-   height: 150px;
+   height: 150px;   
+}
+.profile-div p img{
+    margin-top:0; 
+    width:20px;
 }
 /*Newsfeed*/
 .newsfeed{
@@ -146,4 +150,5 @@ header li{
 /*footer*/
 footer{
     padding: 1.5em;
+    color: #6C567B;
 }
