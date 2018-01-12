@@ -25,8 +25,8 @@ $('#register').on('click', function (event) {
 
 //Uniendo Firebase login
 $('#login').on('click', function (event) {
-  var email = $('#email-register').val();
-  var password = $('#pass-register').val();
+  var email = $('#email-login').val();
+  var password = $('#pass-login').val();
   
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
     // Handle Errors here.
@@ -109,6 +109,16 @@ $('#login-google').on('click', function(event) {
   });
 });
 
+//Cerrando sesión
+$('#logout').on('click', function(event) {
+  firebase.auth().signOut().then(function() {
+    $(location).attr('href', 'index.html');
+  }).catch(function(error) {
+    // An error happened.
+  });
+});
+
+
 $(document).ready(function() {
     validEmail = false;
     validPass = false;
@@ -134,7 +144,7 @@ $(document).ready(function() {
       }
     });
 
-    $('#email-register').on('input', function (event) {
+    $('#email-login').on('input', function (event) {
       var constant = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
       if (constant.test($(this).val())) {
         validEmail = true;
@@ -157,7 +167,7 @@ $(document).ready(function() {
       }
     });
 
-    $('#pass-register').on('input', function (event) {
+    $('#pass-login').on('input', function (event) {
       if ($(this).val().length >= 5) {
         validPass = true;
         validateBtn(); 
@@ -165,9 +175,5 @@ $(document).ready(function() {
         defaultBtn();
         console.log('Ingrese una contraseña válida');
       }
-    });
-
-    $('div > button:eq( 0 )').on('click', function(event) {
-      console.log('hola');
     });
 });
