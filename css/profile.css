@@ -1,5 +1,6 @@
 /* CLASES REUTILIZABLES */
 * {
+  /* font-family: 'Lato', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,10 +8,6 @@
 
 .bell img {
     width: 20px;
-}
-
-.external-link {
-  font-size: 16px;
 }
 
 header {
@@ -21,12 +18,8 @@ header {
 }
 
 section, footer {
-  font-family: 'Bellefair', serif;
+  background-color: rgba(248, 177, 149, 0.3);
   box-shadow: 1px 1px 5px #6C567B;
-}
-
-section {
-  font-size: 18px;
 }
 
 button {
@@ -48,12 +41,8 @@ button:hover {
 }
 
 figcaption, p {
-  color: #333;
+  color: #6C567B;
   font-weight: bold;
-}
-
-figcaption {
-  font-size: 24px;
 }
 
 .container-flex-column {
@@ -87,12 +76,6 @@ header li{
   padding: 1.5em;
 }
 
-.profile-con {
-  background-color: #fff;
-  border: 1px solid rgba(184, 184, 184, 0.637);
-  border-radius: 2px;
-}
-
 .user-picture {
   border: 3px solid #fff;
   height: 150px;
@@ -101,7 +84,7 @@ header li{
 
 .post-section {
   padding: 1.5em;
-  background-image: url('../assets/images/paisaje2.jpg');
+  background-image: url('../assets/images/imagen1.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -117,10 +100,6 @@ header li{
 
 .photo-post-section {
   padding: 1.5em;
-}
-
-.pic-test, textarea {
-  border-radius: 4px;
 }
 
 .time-indicator, .heart, .colored-heart {
@@ -153,14 +132,12 @@ header li{
 }
 
 footer {
+  color: #6C567B;
+  font-family: 'Bellefair', serif;
   font-size: 1.2em;
   font-weight: 800;
   height: 5vh;
   padding: 1.5em;
-}
-
-.footer-text {
-  color: #6C567B !important;
 }
 
 #contact-modal-content {
