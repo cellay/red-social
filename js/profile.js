@@ -19,7 +19,7 @@ function createPosts() {
     var postTxtAreaValue = $('#post-txtarea').val();
     console.log(postTxtAreaValue);
     // Crear párrafo de publicación
-    var pPost = '<p class="text-uppercase">' + postTxtAreaValue + '</p>';
+    var pPost = '<p>' + postTxtAreaValue + '</p>';
     // Crear espacio donde irá la hora y usar librería para imprimir la hora
     var time = moment().format('HH:mm');
     var timeContainer = '<span class="time-indicator">' + time + '</span>';

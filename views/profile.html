@@ -7,6 +7,8 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Megrim|Mountains+of+Christmas|Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
@@ -21,10 +23,10 @@
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="newsfeed.html" target="_blank">Noticias</a>
+                        <a href="newsfeed.html">Noticias</a>
                     </li>
                     <li role="presentation">
-                        <a href="chat.html" target="_blank">Chat</a>
+                        <a href="chat.html">Chat</a>
                     </li>
                     <li role="presentation">
                         <a href="final.html">Salir</a>
@@ -42,13 +44,21 @@
             <figure>
               <img class="center-block img-circle user-picture" src="../assets/images/velour.jpg" alt="user-picture">
               <br>
-              <figcaption class="text-center text-uppercase">
-                velour
-                <a class="follow" href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-                  <img src="../assets/images/addcontact.svg">
-                </a>
+              <figcaption class="text-center">
+                Velour
+                <span class="follow" href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </span>
               </figcaption>
             </figure>
+            <br>
+            <div class="profile-info text-center">
+              <a href="http://sashavelour.com/">Visita mi página</a>
+              <br>
+              <p><i class="fa fa-home" aria-hidden="true"></i> Vive en EEUU</p>
+              <p><i class="fa fa-briefcase" aria-hidden="true"></i> Trabaja en Velour Magazine</p>
+              <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>   Diseñadora grafica</p>
+            </div>
           </div>
     </div>
 
@@ -58,7 +68,7 @@
   <section class="post-section">
     <div>
       <!-- Área para escribir contenido de publicación -->
-      <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="Expresa tu creatividad"></textarea>
+      <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="Expresa tu creatividad..."></textarea>
       <br>
       <input type="file" name="" value="" class="upload-photos">
       <br>
@@ -72,7 +82,7 @@
     <!-- Contenedor de la publicación -->
     <div class="post-container">
       <!-- Publicación -->
-      <p>ART OF RESISTANCE</p>
+      <p>Art of resistence</p>
       <!-- Imágenes -->
       <figure class="photo-profile">
         <img class="pic-test"  src="../assets/images/gaga-velour.jpg" alt="gaga-velour">
@@ -109,7 +119,7 @@
 
   <!-- Pie de página -->
   <footer class="footer text-center">
-    <p>Copyright&copy; beCreative 2018</p>
+    <p class="footer-text">Copyright&copy; beCreative 2018</p>
   </footer>
 
   <!-- Ventana emergente que indica que se ha agredado a un contacto -->
