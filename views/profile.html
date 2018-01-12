@@ -40,7 +40,7 @@
   <!-- Perfil en miniatura -->
   <section class="container-fluid profile-min">
     <div class="row">
-          <div class="profile-con col-xs-12  col-md-12">
+          <div class="profile-con col-xs-12 col-md-12">
             <figure>
               <img class="center-block img-circle user-picture" src="../assets/images/velour.jpg" alt="user-picture">
               <br>
@@ -50,6 +50,13 @@
                 <span class="follow" href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
                   <i class="fa fa-plus" aria-hidden="true"></i>
                 </span>
+                <br>
+                <a class="external-link" href="http://sashavelour.com/">Visita mi página web</a>
+                <hr>
+                <b>About:</b>
+                <p><i class="fa fa-home" aria-hidden="true"></i> Vive en EEUU</p>
+                <p><i class="fa fa-briefcase" aria-hidden="true"></i> Trabaja en Velour Magazine</p>
+                <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>   Diseñadora grafica</p>
               </figcaption>
             </figure>
           </div>
@@ -58,15 +65,18 @@
   </section>
 
   <!-- Sección de creación de publicaciones -->
-  <section class="post-section">
-    <div>
-      <!-- Área para escribir contenido de publicación -->
-      <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="Expresa tu creatividad"></textarea>
-      <br>
-      <input type="file" name="" value="" class="upload-photos">
-      <br>
-      <!-- Botón para publicar -->
-      <button type="send" name="button" class="center-block post-btn" id="post-btn">Publicar</button>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="post-section col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+        <!-- Área para escribir contenido de publicación -->
+        <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="Expresa tu creatividad..."></textarea>
+        <br>
+        <input type="file" name="" value="" class="upload-photos">
+        <br>
+        <!-- Botón para publicar -->
+        <button type="send" name="button" class="post-btn" id="post-btn">Publicar</button>
+      </div>
+
     </div>
   </section>
 
@@ -74,6 +84,7 @@
   <section class="photo-post-section">
     <!-- Contenedor de la publicación -->
     <div class="post-container">
+      <hr>
       <!-- Publicación -->
       <p>Art of resistance</p>
       <!-- Imágenes -->
@@ -83,19 +94,28 @@
         <img class="pic-test"  src="../assets/images/dog-velour.jpg" alt="dog-velour">
       </figure>
       <br>
-      <span class="time-indicator">12:25</span>
-      <!-- Ícono para dar like -->
-      <a class="heart" href="#">
-        <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart">
-      </a>
-      <!-- Ícono para dar like pintado -->
-      <a class="colored-heart" href="#" hidden>
-        <img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart">
-      </a>
-      <!-- Ícono para comentar -->
-      <a class="comment-bubble" href="#">
-        <img src="../assets/images/chat.svg">
-      </a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-">
+            <span class="time-indicator">12:25</span>
+          </div>
+          <div class="col-">
+            <!-- Ícono para dar like -->
+            <a class="heart" href="#">
+              <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart">
+            </a>
+            <!-- Ícono para dar like pintado -->
+            <a class="colored-heart" href="#" hidden>
+              <img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart">
+            </a>
+            <!-- Ícono para comentar -->
+            <a class="comment-bubble" href="#">
+              <img src="../assets/images/chat.svg">
+            </a>
+          </div>
+
+        </div>
+      </div>
       <!-- Sección para realizar comentario -->
       <div class="comment-side" hidden>
         <!-- Área para escribir comentario -->
@@ -112,7 +132,7 @@
 
   <!-- Pie de página -->
   <footer class="footer text-center">
-    <p>Copyright&copy; beCreative 2018</p>
+    <p class="footer-text">Copyright&copy; beCreative 2018</p>
   </footer>
 
   <!-- Ventana emergente que indica que se ha agredado a un contacto -->

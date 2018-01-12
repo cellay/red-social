@@ -9,6 +9,10 @@
     width: 20px;
 }
 
+.external-link {
+  font-size: 16px;
+}
+
 header {
   background:linear-gradient(to bottom right, #6C567B, #C06C84);
   background-position: left top;
@@ -18,7 +22,6 @@ header {
 
 section, footer {
   font-family: 'Bellefair', serif;
-  background-color: rgba(248, 177, 149, 0.3);
   box-shadow: 1px 1px 5px #6C567B;
 }
 
@@ -84,6 +87,12 @@ header li{
   padding: 1.5em;
 }
 
+.profile-con {
+  background-color: #fff;
+  border: 1px solid rgba(184, 184, 184, 0.637);
+  border-radius: 2px;
+}
+
 .user-picture {
   border: 3px solid #fff;
   height: 150px;
@@ -92,7 +101,7 @@ header li{
 
 .post-section {
   padding: 1.5em;
-  background-image: url('../assets/images/imagen1.jpg');
+  background-image: url('../assets/images/paisaje2.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -144,11 +153,14 @@ header li{
 }
 
 footer {
-  color: #6C567B !important;
   font-size: 1.2em;
   font-weight: 800;
   height: 5vh;
   padding: 1.5em;
+}
+
+.footer-text {
+  color: #6C567B !important;
 }
 
 #contact-modal-content {
