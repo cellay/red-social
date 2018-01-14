@@ -43,6 +43,13 @@ function createPosts() {
   });
 }
 
+/* DESABILITAR BOTÓN */
+function disableButton() {
+  var postTxtarea = $('#post-txtarea');
+  var postBtn = $('#post-btn');
+  var textLength = postTxtarea.val().length;
+}
+
 /* FUNCIÓN PARA DAR LIKE */
 function pressLike() {
   // Crear variables para obtener elementos
