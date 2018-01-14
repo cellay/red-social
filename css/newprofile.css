@@ -1,10 +1,12 @@
 /* Encabezado */
 header {
-    background:linear-gradient(to bottom right, #6C567B, #C06C84);
+    /* background:linear-gradient(to bottom right, #6C567B, #C06C84); */
     background-position: left top;
     color: whitesmoke;
     font-family: 'Megrim', cursive;
     padding-left: 2%;
+    background: linear-gradient(to bottom right,#3A0077 , #8983F3);
+    box-shadow: 6px 5px 6px -4px rgb(16, 1, 31);
 }
 
 h1 .logo-name {
@@ -26,13 +28,16 @@ h1, nav {
 
 .header-links {
     color: #fff;
-    font-family: 'Bellefair', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.250em;
 }
 
 /* Sección */
 section {
-    background-color: rgba(248, 177, 149, 0.3);
+    /* background-color: rgba(248, 177, 149, 0.3); */
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
     padding: 2%;
 }
 
@@ -41,6 +46,7 @@ section {
     border-radius: 0.125em;
     background-color: #fff;
     padding: 1em;
+    box-shadow: 6px 7px 6px -4px rgb(206, 206, 206);
 }
 
 .user-picture {
@@ -49,7 +55,7 @@ section {
     width: 150px;
 }
 
-/* Sección para publicar */
+/* Sección de creación de publicaciones */
 .post-section {
     padding: 1.5em;
     background-image: url('../assets/images/paisaje2.jpg');
@@ -66,12 +72,17 @@ textarea, .pic-test {
     margin-bottom: 1em;
 }
 
+label {
+  margin-right: 1.5em;
+}
+
 .camera-icon {
   width: 40px;
 }
 
 button {
-    background: #6C567B;
+    /* background: #6C567B; */
+    background: linear-gradient(to bottom right,#3A0077 , #8983F3);
     border: none;
     color: whitesmoke;
     font-size: 18px;
@@ -90,7 +101,7 @@ button:hover {
 
 /* Sección de publicación con foto */
 .photo-post-section {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 .user-picture-container {
@@ -105,15 +116,33 @@ button:hover {
 }
 
 .post-wrapper {
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
+    border-bottom: 0.063em solid rgba(184, 184, 184, 0.637);
 }
 
+.pic-test {
+  margin: 1em;
+}
+
+/* tamaño de ícocos de me gusta y comentar */
 .icons-wrapper img {
-  width: 25px;
+  width: 24px;
+}
+
+.follow i {
+  font-size: 25px;
 }
 
 .heart, .colored-heart {
   margin-right: 0.5em;
+}
+
+.heart:hover, .colored-heart:hover, .comment-bubble:hover, .follow:hover {
+  box-shadow: 1px 1px 5px #555;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
 }
 
 .pic-test:hover {
@@ -124,9 +153,10 @@ button:hover {
 /* Pie de página */
 footer {
   color: #6C567B;
-  font-family: 'Bellefair', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
-  font-weight: 800;
+  font-weight: bold;
+  /* font-weight: 800; */
   height: 5vh;
   padding: 1.5em;
 }
