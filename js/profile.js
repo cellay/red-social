@@ -11,27 +11,31 @@ function begin() {
 function createPosts() {
   // Crear variables para obtener elementos
   var postBtn = $('#post-btn');
-  // console.log(postBtn);
   var postSection = $('.photo-post-section');
   // Crear evento de publicar al dar clic en botón
   $(postBtn).on('click', function() {
     // Capturar valor del área de texto
     var postTxtAreaValue = $('#post-txtarea').val();
-    console.log(postTxtAreaValue);
+    // Optener nombre de usuario
+    var userName = $('#user-name').text();
+    // Crear párrafo para nombre de usuario
+    var pUserName = '<div class="row"><p class="col-xs-12 col-sm-12 col-md-12 user-name">' + userName + '</p></div>';
     // Crear párrafo de publicación
-    var pPost = '<p>' + postTxtAreaValue + '</p>';
+    var pPost = '<div class="row"><p class="col-xs-12 col-sm-12 col-md-12">' + postTxtAreaValue + '</p></div>';
+    // Crear espacio donde irá imagen a subir
+    var picLoad = '<div class="row"><img class="pic-test img-responsive" src="../assets/images/dog-velour.jpg"></div>';
     // Crear espacio donde irá la hora y usar librería para imprimir la hora
     var time = moment().format('HH:mm');
-    var timeContainer = '<span class="time-indicator">' + time + '</span>';
-    // Crear botones de gustar y comentar
-    var likeBtn = '<a class="heart" href="#"><img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a>';
-    var likeBtnColored = '<a class="colored-heart" href="#" hidden><img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart"></a>';
-    var commentBubble = '<a class="comment-bubble" href="#"><img src="../assets/images/chat.svg"></a>';
-    var commentSide = '<div class="comment-side" hidden><textarea name="name" class="center-block post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" id="comment-btn">Comentar</button></div>' ;
+    var timeContainer = '<span class="col-xs-1 col-sm-1 col-md-1">' + time + '</span>';
+    // Crear contenedor de íconos
+    var iconsWrapper = '<div class="icons-wrapper col-xs-push-1 col-xs-offset-6 col-sm-offset-8 col-sm-3 col-md-offset-8 col-md-3"><a class="heart" href="#"><img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a><a class="colored-heart" href="#" hidden><img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart"></a><a class="comment-bubble" href="#"><img src="../assets/images/chat.svg"></a></div>';
+    var commentSide = '<div class="row comment-side-container" hidden><div class="col-xs-12 comment-side"><textarea name="name" class="col-xs-12 post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" id="comment-btn">Comentar</button></div></div>' ;
     // Crear espacio para agregar publicación con botones de gustar y comentar
-    var postContainer = '<div class="post-container">' + pPost + timeContainer + likeBtn + likeBtnColored + commentBubble + commentSide + '</div>';
+    var postWrapper = '<div class="post-wrapper col-xs-12 col-md-12">' + pUserName + pPost + picLoad + '<div class="row">' + timeContainer + iconsWrapper + '</div>' + commentSide + '</div>';
     // Agregar un párrafo de publicacíon que aparecerá en el perfil
-    $(postSection).find('div').first().before(postContainer);
+    $(postSection).find('div').first().before(postWrapper);
+    // Limpiar contenido de textarea después de publicar
+    $('#post-txtarea').val('');
     // Llamada de función para dar like
     pressLike();
     // Llamada de función para quitar like
@@ -84,9 +88,9 @@ function pressUnLike() {
 function showSectionToSendComment() {
   // Crear variables para obtener elementos
   var commentIcon = $('.comment-bubble');
-  var comentSide = $('.comment-side');
+  var comentSideContainer = $('.comment-side-container');
   $(commentIcon).on('click', function() {
-    $(comentSide).show();
+    $(comentSideContainer).toggle();
   });
 }
 
