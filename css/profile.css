@@ -1,35 +1,89 @@
-/* CLASES REUTILIZABLES */
-* {
-  /* font-family: 'Lato', sans-serif; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.bell img {
-    width: 20px;
-}
-
+/* Encabezado */
 header {
-    background:linear-gradient(to bottom right, #6C567B, #C06C84);
+    /* background:linear-gradient(to bottom right, #6C567B, #C06C84); */
     background-position: left top;
     color: whitesmoke;
     font-family: 'Megrim', cursive;
+    padding-left: 2%;
+    background: linear-gradient(to bottom right,#3A0077 , #8983F3);
+    box-shadow: 6px 5px 6px -4px rgb(16, 1, 31);
 }
 
-section, footer {
-    font-family: 'Bellefair', serif;
-    background-color: rgba(248, 177, 149, 0.3);
-    box-shadow: 1px 1px 5px #6C567B;
+h1 .logo-name {
+    color: #fff;
 }
 
+.logo-name:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, nav {
+    display: inline-block;
+}
+
+.bell-icon img, .news-icon img, .chat-icon img, .logout-icon img {
+    width: 20px;
+}
+
+.header-links {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.250em;
+}
+
+/* Sección */
 section {
-    font-size: 18px;
- }
+    /* background-color: rgba(248, 177, 149, 0.3); */
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 2%;
+}
+
+.white-box {
+    border: 0.063em solid rgba(184, 184, 184, 0.637);
+    border-radius: 0.125em;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 6px 7px 6px -4px rgb(206, 206, 206);
+}
+
+.user-picture {
+    border: 3px solid #6C567B;
+    height: 150px;
+    width: 150px;
+}
+
+/* Sección de creación de publicaciones */
+.post-section {
+    padding: 1.5em;
+    background-image: url('../assets/images/paisaje2.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    /* outline: 1px solid red; */
+}
+
+textarea, .pic-test {
+    border-radius: 0.250em;
+}
+
+.post-txtarea {
+    margin-bottom: 1em;
+}
+
+label {
+  margin-right: 1.5em;
+}
+
+.camera-icon {
+  width: 40px;
+}
 
 button {
-    background: #6C567B;
-    border:none;
+    /* background: #6C567B; */
+    background: linear-gradient(to bottom right,#3A0077 , #8983F3);
+    border: none;
     color: whitesmoke;
     font-size: 18px;
     font-weight: 200;
@@ -40,137 +94,69 @@ button {
 }
 
 button:hover {
-    box-shadow: 1px 1px 5px #555;
-    background-color: whitesmoke;
-    color: #000;
+  box-shadow: 1px 1px 5px #555;
+  background-color: whitesmoke;
+  color: #000;
 }
 
-figcaption, p {
-    color: #333;
-    font-weight: bold;
-}
-
-figcaption {
-    font-size: 24px;
- }
-
- .profile-info {
-     font-size: 16px;
-     line-height: 20px;
- }
-
-.container-flex-column {
-    display: flex;
-  	flex-direction: column;
-    justify-content: center;
-  	padding: 2em;
-}
-
-.vh100 {
-  	height: 100vh;
-}
-
-/* CLASES ESPECÍFICAS DE PERFIL */
-header h1 {
-    margin-left: 2%;
-}
-
-header a {
-    color: #fff;
-}
-
-header li{
-    font-family: 'Bellefair', serif;
-    font-size: 20px;
-}
-
-.profile-min {
-    background-color: rgba(248, 177, 149, 0.3);
-    box-shadow: 1px 1px 5px #6C567B;
-    padding: 1.5em;
-}
-
-.user-picture {
-    border: 3px solid #fff;
-    height: 150px;
-    width: 150px;
-}
-
-.post-section {
-    padding: 1.5em;
-    background-image: url('../assets/images/imagen1.jpg');
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
-.post-txtarea {
-    margin-bottom: 1em;
-    width: 90%;
-}
-
-.upload-photos {
-    margin-left: 5%;
-}
-
+/* Sección de publicación con foto */
 .photo-post-section {
-    padding: 1.5em;
+    /* outline: 1px solid blue; */
 }
 
-.pic-test, textarea {
-    border-radius: 4px;
+.user-picture-container {
+    outline: 1px solid orange;
+    /* position: relative; */
 }
 
-#post-btn {
-    opacity: .65;
+.user-picture-post {
+    border: 3px solid #6C567B;
+    /* height: 70px;
+    width: 70px; */
 }
 
-.pic-test:hover {
-    box-shadow: 1px 1px 8px #555;
+.post-wrapper {
+    /* outline: 1px solid yellow; */
+    border-bottom: 0.063em solid rgba(184, 184, 184, 0.637);
 }
 
-.time-indicator, .heart, .colored-heart {
-    margin-right: 1em;
+.pic-test {
+  margin: 1em;
+}
+
+/* tamaño de ícocos de me gusta y comentar */
+.icons-wrapper img {
+  width: 24px;
+}
+
+.follow i {
+  font-size: 25px;
+}
+
+.heart, .colored-heart {
+  margin-right: 0.5em;
 }
 
 .heart:hover, .colored-heart:hover, .comment-bubble:hover, .follow:hover {
-    box-shadow: 1px 1px 5px #555;
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 10px;
-    display: inline-block;
+  box-shadow: 1px 1px 5px #555;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
 }
 
-.comment-side {
-    margin-top: 1em;
+.pic-test:hover {
+  box-shadow: 1px 1px 8px #555;
 }
 
-#comment-btn, .parrapgrah-comment {
-    margin-left: 5%;
-}
 
-.photo-profile .pic-test {
-    width: 25%;
-    margin-right: 1em;
-}
-
-.post-container img, .follow img {
-    width: 30px;
-}
-
+/* Pie de página */
 footer {
-    color: #6C567B;
-    font-family: 'Bellefair', serif;
-    font-size: 1.2em;
-    font-weight: 800;
-    height: 5vh;
-    padding: 1.5em;
-}
-
-.footer-text {
-    color: #6C567B !important;
- }
-
-#contact-modal-content {
-    padding: 1em !important;
-    background-color: rgba(248, 177, 149, 0.8);
+  color: #6C567B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  /* font-weight: 800; */
+  height: 5vh;
+  padding: 1.5em;
 }
