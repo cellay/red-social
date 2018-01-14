@@ -5,6 +5,7 @@ function begin() {
   pressUnLike();
   showSectionToSendComment();
   createComments();
+  disableButton();
 }
 
 /* FUNCIÓN PARA CREAR PUBLICACIONES */
@@ -28,7 +29,7 @@ function createPosts() {
     var time = moment().format('HH:mm');
     var timeContainer = '<span class="col-xs-1 col-sm-1 col-md-1">' + time + '</span>';
     // Crear contenedor de íconos
-    var iconsWrapper = '<div class="icons-wrapper col-xs-push-1 col-xs-offset-6 col-sm-offset-8 col-sm-3 col-md-offset-8 col-md-3"><a class="heart" href="#"><img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a><a class="colored-heart" href="#" hidden><img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart"></a><a class="comment-bubble" href="#"><img src="../assets/images/chat.svg"></a></div>';
+    var iconsWrapper = '<div class="icons-wrapper col-xs-push-1 col-xs-offset-6 col-sm-offset-8 col-sm-3 col-md-offset-8 col-md-3"><a class="heart" href="#"><img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart"></a><a class="colored-heart" href="#" hidden><img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart"></a><span class="like-count"></span><a class="comment-bubble" href="#"><img src="../assets/images/chat.svg"></a></div>';
     // Crear espacio para crear comentario
     var commentSide = '<div class="row comment-side-container" hidden><div class="col-xs-12 comment-side"><textarea name="name" class="col-xs-12 post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" id="comment-btn">Comentar</button></div></div>' ;
     // Crear espacio donde se mostrará Comentario
@@ -47,14 +48,24 @@ function createPosts() {
     showSectionToSendComment();
     // Llamada de función para crear comentario
     createComments();
+    // Llamada de función para contar likes
+    likeCounting();
   });
 }
 
 /* DESABILITAR BOTÓN */
 function disableButton() {
   var postTxtarea = $('#post-txtarea');
+  console.log(postTxtarea);
   var postBtn = $('#post-btn');
-  var textLength = postTxtarea.val().length;
+  console.log(postBtn);
+  postBtn.prop('disabled', true);
+  $(postTxtarea).on('input', function() {
+    if ($(this).val().length >= 1) {
+      postBtn.prop('disabled', false);
+      postBtn.addClass('button');
+    }
+  });
 }
 
 /* FUNCIÓN PARA DAR LIKE */
@@ -110,6 +121,18 @@ function createComments() {
     var pComment = '<div class"row"><p class="parrapgrah-comment col-xs-12 ">' + commentTxtAreaValue + '</p></p>';
     $(commentDisplaySection).append(pComment);
     $('#comment-txtarea').val('');
+  });
+}
+
+/* FUNCIÓN PARA CONTAR LIKES */
+function likeCounting() {
+  var likeShowing = $('.like-count');
+  var likeBtnColored = $('.colored-heart');
+  var like = 1;
+  // Agregar evento de clic en el botón para sumar likes
+  $(likeBtnColored).on('click', function() {
+    likeShowing.text(like);
+    like++;
   });
 }
 
