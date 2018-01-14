@@ -1,0 +1,132 @@
+/* Encabezado */
+header {
+    background:linear-gradient(to bottom right, #6C567B, #C06C84);
+    background-position: left top;
+    color: whitesmoke;
+    font-family: 'Megrim', cursive;
+    padding-left: 2%;
+}
+
+h1 .logo-name {
+    color: #fff;
+}
+
+.logo-name:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, nav {
+    display: inline-block;
+}
+
+.bell-icon img, .news-icon img, .chat-icon img, .logout-icon img {
+    width: 20px;
+}
+
+.header-links {
+    color: #fff;
+    font-family: 'Bellefair', serif;
+    font-size: 1.250em;
+}
+
+/* Sección */
+section {
+    background-color: rgba(248, 177, 149, 0.3);
+    padding: 2%;
+}
+
+.white-box {
+    border: 0.063em solid rgba(184, 184, 184, 0.637);
+    border-radius: 0.125em;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.user-picture {
+    border: 3px solid #6C567B;
+    height: 150px;
+    width: 150px;
+}
+
+/* Sección para publicar */
+.post-section {
+    padding: 1.5em;
+    background-image: url('../assets/images/paisaje2.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    outline: 1px solid red;
+}
+
+textarea, .pic-test {
+    border-radius: 0.250em;
+}
+
+.post-txtarea {
+    margin-bottom: 1em;
+}
+
+.camera-icon {
+  width: 40px;
+}
+
+button {
+    background: #6C567B;
+    border: none;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 200;
+    transition: box-shadow .4s ease;
+    margin-bottom: 20px;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px #555;
+  background-color: whitesmoke;
+  color: #000;
+}
+
+/* Sección de publicación con foto */
+.photo-post-section {
+    outline: 1px solid blue;
+}
+
+.user-picture-container {
+    outline: 1px solid orange;
+    /* position: relative; */
+}
+
+.user-picture-post {
+    border: 3px solid #6C567B;
+    height: 50px;
+    width: 50px;
+}
+
+.post-wrapper {
+    outline: 1px solid yellow;
+}
+
+.icons-wrapper img {
+  width: 25px;
+}
+
+.heart, .colored-heart {
+  margin-right: 0.5em;
+}
+
+.pic-test:hover {
+  box-shadow: 1px 1px 8px #555;
+}
+
+
+/* Pie de página */
+footer {
+  color: #6C567B;
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  height: 5vh;
+  padding: 1.5em;
+}
