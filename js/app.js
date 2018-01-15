@@ -42,7 +42,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     var displayName = user.displayName;
-    alert(displayname);
+    alert(displayName);
     var email = user.email;
     var emailVerified = user.emailVerified;
     var photoURL = user.photoURL;
