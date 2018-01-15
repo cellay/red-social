@@ -1,6 +1,90 @@
 /* CSS */
+
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Carousel */
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item {
+  height: 100vh; 
+  min-height: 600px; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+
+/* carousel fullscreen - vertically centered caption*/
+
+.carousel-fullscreen .carousel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* overlay for better readibility of the caption  */
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  transition: all 0.2s ease-out;
+}
+
+.super-heading {
+  font-size: 90px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bolder;
+}
+
+.super-paragraph {
+  font-size: 30px; font-weight: 300;
+}
+
+.carousel-caption .super-paragraph a,
+.carousel-caption .super-paragraph a:hover
+{
+  color: #fff;
+}
+
+#carousel-example-generic {
+  margin: 40px 0;
+}
+
+.logo-font {
+  font-family: 'Lobster', sans-serif;
 }
 
 .d-flex {
@@ -11,46 +95,22 @@
 }
 
 .row {
-  width: 100%;
+  min-width: 100%;
 }
 
-header {
-  /* width: 100%;
-  background:linear-gradient(to bottom right, #6C567B, #C06C84);
-  background-position: left top; */
-  color: whitesmoke;
-  font-family: 'Bellefair', cursive;
-  font-size: 1.5em;
-  float: right;
-  height: 10vh;
-}
 
-.nav {
-  margin: auto 10px;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  color:  whitesmoke;
-}
-
-.nav:hover {
-  background:linear-gradient(to bottom right, #6C567B, #C06C84);
-  opacity: 0.9;
-  border-radius: 5px;
-  box-shadow: snow;
-  color: whitesmoke;
-  transform: translateY(5px);
-}
 
 body {
   text-align: center;
-  background: transparent url('../assets/images/background-web.jpg');
   height: 80vh;
 }
 
 .principal-view {
   height: 85vh;
   width: 100%;
-  color: #6C567B;
+  color: #2d0946;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 section {
@@ -59,7 +119,7 @@ section {
 
 footer {
   color: whitesmoke;
-  font-family: 'Bellefair', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   font-weight: 800;
   height: 5vh;
@@ -68,7 +128,7 @@ footer {
 .logo-box {
   background-color: rgba(0, 0, 0, 0);
   color: whitesmoke;
-  font-family: 'Megrim', cursive;
+  font-family: 'Pt Sans Narrow', sans-serif;
   font-size: 3.7em;
   font-weight: bolder;
   text-align: center;
@@ -76,19 +136,25 @@ footer {
   height: 80vh;  
 }
 
+.logo-box img {
+  width: 200px;
+  height: 200px;
+}
+
 .register-box {
   align-content: center;
   height: 80vh;
-  font-family: 'Bellefair', serif;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
 }
 
 .form-group {
   align-content: center;
-  background-color: rgba(238, 210, 200, 0.7);
+  background-color: rgba(207, 198, 195, 0.7);
   border-radius: 5px;
-  box-shadow: 1px 1px 5px #6C567B;
-  font-family: 'Bellefair', serif;
+  box-shadow: 1px 1px 5px rgb(36, 2, 58);
+  font-family: 'Roboto', sans-serif;
+  text-shadow: none;
 }
 
 input[type="email"], input[type="password"] {
@@ -115,7 +181,7 @@ input[type="email"], input[type="password"] {
 
 .login-facebook-google {
   color: #6C567B;
-  font-family: 'Bellefair', serif;
+  font-family: 'Roboto', sans-serif;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -129,4 +195,23 @@ input[type="email"], input[type="password"] {
 .login-facebook-google img:hover {
   border-radius: 250px;
   box-shadow: 5px 10px rgba(192, 108, 132, 0.8);
+}
+
+.principal-view-mobile {
+  height: 100vh;
+  width: 100%;
+  color: #2d0946;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700;
+  justify-content: center;
+  align-self: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-font-mobile {
+  font-size: 30px;
+  font-family: 'Lobster',sans-serif;
+  font-weight: bolder;
+  margin-top: 30px;
 }
