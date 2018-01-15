@@ -165,3 +165,10 @@ footer {
   height: 5vh;
   padding: 1.5em;
 }
+
+
+/* Modal */
+#contact-modal-content {
+    padding: 1em !important;
+    background-color: rgba(248, 177, 149, 0.8);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Social Network</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Bellefair" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class=" clearfix">
+    <button class="nav">Hey! Sign In</button>
+  </header>
+  <section class="container-fluid d-flex principal-view">
+    <section class="row">
+      <section class="col-sm-4 col-sm-offset-1 hidden-xs">
+        <div class="d-flex logo-box">
+          <p>beCreative</p>
+        </div>
+      </section>
+      <section class="col-sm-4 col-sm-offset-1 col-sm-push-1 col-xs-12 d-flex">
+        <div class=" d-flex register-box">
+          <div class="form-group d-flex">
+            <div class="row d-flex login-facebook-google">
+              <div class="col-xs-5 col-md-5 d-flex">
+                <img class="img" id="login-fb" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" alt="Facebook">
+              </div>
+              <div class="col-xs-5 col-md-5 d-flex">
+                <img class="img" id="login-google" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google">
+              </div>
+            </div>
+
+            <input type="email" placeholder="Email" id="email-login">
+            <input type="password" placeholder="Password" id="pass-login">
+            <p class="col-sm-12">Welcome again! I hope you have a great day.</p>
+            <button class="btn" id="login">Sign up</button>
+            <section class="row">
+              <p class="col-xs-12">Don't have an account?
+                <a data-toggle="modal" data-target="#myModal">Sign In</a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <footer>
+    <p>Copyright© beCreative 2018</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content form-group">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign In</h4>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex">
+            <input class="" type="email" placeholder="Email" id="email">
+            <input class="" type="password" placeholder="Password" id="pass">
+            <p class="col-sm-12">By signing up, you agree to our Terms & Privacy Policy.</p>
+            <button class="btn" id="register">Sign in</button>
+          </div>
+        </div>
+        <div class="modal-footer container-fluid">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
