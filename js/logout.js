@@ -17,3 +17,20 @@ $('#logout').on('click', function(event) {
     // An error happened.
   });
 });
+
+var dataImage= firebase.database().ref('imagePost');
+
+  $('#file').on('change', function() {
+      if(this.files&&this.files[0]) {
+          var watcher = new FileReader();
+          watcher.onload = function(e) {
+            dataImage.push({
+                url:e.target.result,
+            });
+
+            $('.photo-post-section').append('<img class = "uploadImg" style="height:auto;width:400px" src="" alt="">');
+            $('.uploadImg').attr('src', e.target.result);
+          };
+          watcher.readAsDataURL(this.files[0])
+      }
+  })
