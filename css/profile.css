@@ -3,9 +3,9 @@ header {
     /* background:linear-gradient(to bottom right, #6C567B, #C06C84); */
     background-position: left top;
     color: whitesmoke;
-    font-family: 'Lobster', cursive;
+    font-family: 'Megrim', cursive;
     padding-left: 2%;
-    background: linear-gradient(to bottom right,#3A0077 , #8983F3);
+    background: linear-gradient(to bottom right,#3A0077 , rgb(56, 48, 216));
     box-shadow: 6px 5px 6px -4px rgb(16, 1, 31);
 }
 
@@ -28,7 +28,7 @@ h1, nav {
 
 .header-links {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.250em;
 }
 
@@ -36,7 +36,7 @@ h1, nav {
 section {
     /* background-color: rgba(248, 177, 149, 0.3); */
     background-color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     padding: 2%;
 }
@@ -63,7 +63,12 @@ section {
     background-size: cover;
     /* outline: 1px solid red; */
 }
-
+.newsfeed{
+    background-color: white;
+    border: 0.8px solid rgb(212, 212, 212); 
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
 textarea, .pic-test {
     border-radius: 0.250em;
 }
@@ -82,9 +87,9 @@ label {
 
 button {
     /* background: #6C567B; */
-    background: linear-gradient(to bottom right,#3A0077 , #8983F3);
+    background: #A5F2E7;
     border: none;
-    color: whitesmoke;
+    color: rgb(17, 17, 17);
     font-size: 18px;
     font-weight: 200;
     transition: box-shadow .4s ease;
@@ -153,13 +158,14 @@ button:hover {
 /* Pie de página */
 footer {
   color: #6C567B;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   /* font-weight: 800; */
   height: 5vh;
   padding: 1.5em;
 }
+
 
 /* Modal */
 #contact-modal-content {

@@ -14,11 +14,11 @@ header {
     background:linear-gradient(to bottom right, #6C567B, #C06C84);
     background-position: left top;
     color: whitesmoke;
-    font-family: 'Lobster', cursive;
+    font-family: 'Megrim', cursive;
 }
 
 section, footer {
-    font-family: 'Roboto', serif;
+    font-family: 'Bellefair', serif;
     background-color: rgba(248, 177, 149, 0.3);
     box-shadow: 1px 1px 5px #6C567B;
 }
@@ -80,7 +80,7 @@ header a {
 }
 
 header li{
-    font-family: 'Roboto', serif;
+    font-family: 'Bellefair', serif;
     font-size: 20px;
 }
 
@@ -159,7 +159,7 @@ header li{
 
 footer {
     color: #6C567B;
-    font-family: 'Roboto', serif;
+    font-family: 'Bellefair', serif;
     font-size: 1.2em;
     font-weight: 800;
     height: 5vh;

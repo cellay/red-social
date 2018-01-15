@@ -20,11 +20,11 @@ function createPosts() {
     // Optener nombre de usuario
     var userName = $('#user-name').text();
     // Crear párrafo para nombre de usuario
-    var pUserName = '<div class="row"><p class="col-xs-12 col-sm-12 col-md-12 user-name">' + userName + '</p></div>';
+    var pUserName = '<div class="row"><p class="col-xs-12 col-sm-12 text-center user-name">' + userName + '</p></div>';
     // Crear párrafo de publicación
-    var pPost = '<div class="row"><p class="col-xs-12 col-sm-12 col-md-12">' + postTxtAreaValue + '</p></div>';
+    var pPost = '<div class="row"><p class="col-xs-12 col-sm-12 text-center">' + postTxtAreaValue + '</p></div>';
     // Crear espacio donde irá imagen a subir
-    var picLoad = '<div class="row"><img class="pic-test img-responsive" src="../assets/images/dog-velour.jpg"></div>';
+    var picLoad = '<div class="row"><img class="col-sm-offset-3 col-sm-6 img-responsive" src="../assets/images/dog.jpg"></div>';
     // Crear espacio donde irá la hora y usar librería para imprimir la hora
     var time = moment().format('HH:mm');
     var timeContainer = '<span class="col-xs-1 col-sm-1 col-md-1">' + time + '</span>';

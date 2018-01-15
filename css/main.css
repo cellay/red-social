@@ -1,109 +1,6 @@
 /* CSS */
-
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Carousel */
-
-.carousel-fade .carousel-inner .item {
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  transform: translate3d(0, 0, 0);
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-
-/* carousel fullscreen */
-
-.carousel-fullscreen .carousel-inner .item {
-  height: 100vh; 
-  min-height: 600px; 
-  background-position: center center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
-}
-
-
-/* carousel fullscreen - vertically centered caption*/
-
-.carousel-fullscreen .carousel-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* overlay for better readibility of the caption  */
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.3;
-  transition: all 0.2s ease-out;
-}
-
-.super-heading {
-  font-size: 4em;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bolder;
-  color: whitesmoke;
-}
-
-.super-paragraph {
-  font-size: 2em;
-  font-weight: 300;
-  color: rgb(214, 243, 239);
-}
-
-.carousel-caption .super-paragraph a,
-.carousel-caption .super-paragraph a:hover
-{
-  color: #fff;
-}
-
-#carousel-example-generic {
-  margin: 40px 0;
-}
-
-.logo-font {
-  font-family: 'Lobster', sans-serif;
-  font-size: 2em;
-}
-
-@media (max-width: 600px) {
-  .logo-font {
-    font-family: 'Lobster', sans-serif;
-    font-size: 2.5em;
-  }
-
-  .super-paragraph {
-    font-size: 1.5em;
-  }
-  .super-heading {
-    font-size: 2em;
-  }
-
 }
 
 .d-flex {
@@ -114,23 +11,46 @@
 }
 
 .row {
-  min-width: 100%;
+  width: 100%;
 }
 
+header {
+  /* width: 100%;
+  background:linear-gradient(to bottom right, #6C567B, #C06C84);
+  background-position: left top; */
+  color: whitesmoke;
+  font-family: 'Bellefair', cursive;
+  font-size: 1.5em;
+  float: right;
+  height: 10vh;
+}
 
+.nav {
+  margin: auto 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color:  whitesmoke;
+}
+
+.nav:hover {
+  background:linear-gradient(to bottom right, #6C567B, #C06C84);
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: snow;
+  color: whitesmoke;
+  transform: translateY(5px);
+}
 
 body {
   text-align: center;
+  background: transparent url('../assets/images/background-web.jpg');
   height: 80vh;
 }
 
 .principal-view {
   height: 85vh;
   width: 100%;
-  color:  rgb(62, 27, 99);
-  font-size: 15px;
-  font-weight: 700;
-  text-shadow: none;
+  color: #6C567B;
 }
 
 section {
@@ -139,7 +59,7 @@ section {
 
 footer {
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bellefair', serif;
   font-size: 1.2em;
   font-weight: 800;
   height: 5vh;
@@ -148,7 +68,7 @@ footer {
 .logo-box {
   background-color: rgba(0, 0, 0, 0);
   color: whitesmoke;
-  font-family: 'Pt Sans Narrow', sans-serif;
+  font-family: 'Megrim', cursive;
   font-size: 3.7em;
   font-weight: bolder;
   text-align: center;
@@ -156,25 +76,19 @@ footer {
   height: 80vh;  
 }
 
-.logo-box img {
-  width: 200px;
-  height: 200px;
-}
-
 .register-box {
   align-content: center;
   height: 80vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bellefair', serif;
   width: 100%;
 }
 
 .form-group {
   align-content: center;
-  background-color: rgba(207, 198, 195, 0.7);
+  background-color: rgba(238, 210, 200, 0.7);
   border-radius: 5px;
-  box-shadow: 1px 1px 5px rgb(36, 2, 58);
-  font-family: 'Roboto', sans-serif;
-  text-shadow: none;
+  box-shadow: 1px 1px 5px #6C567B;
+  font-family: 'Bellefair', serif;
 }
 
 input[type="email"], input[type="password"] {
@@ -201,7 +115,7 @@ input[type="email"], input[type="password"] {
 
 .login-facebook-google {
   color: #6C567B;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bellefair', serif;
   flex-direction: row;
   justify-content: space-around;
 }
