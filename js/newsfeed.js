@@ -18,7 +18,7 @@ $(document).ready(function() {
   function addPost() {    
     var $time = moment().format('HH:mm');
     var $content = $textarea.val();
-    $('section').find('div:first').before('<div class="clearfix newsfeed-contact"><figure class= "col-xs-3 col-sm-2"> <img src="../assets/images/velour.jpg" class="img-circle contact" alt="Profile"></figure><h4 class="col-xs-4 col-sm-2">Designer</h4><p class="col-xs-9 col-sm-10 text clearfix">' + $content + '</p><div class="container-icons col-xs-offset-3 col-xs-8 col-sm-offset-2 col-sm-9"><p class="time col-xs-1 col-sm-1">' + $time + '</p><div class="icons col-xs-offset-7 col-sm-offset-8"><span class="comment start-chat"><img src="../assets/images/chat.svg" alt="chat"></span><span><a href="#" data-toggle="tooltip" title="Me encanta"><img src="../assets/images/heart.svg" alt="heart"></a></span></div></div></div><hr>');
+    $('section').find('div:first').before('<div class="clearfix newsfeed-contact"><figure class= "col-xs-3 col-sm-2"> <img src="../assets/images/women.jpg" class="img-circle contact" alt="Profile"></figure><h4 class="col-xs-4 col-sm-2">Designer</h4><p class="col-xs-9 col-sm-10 text clearfix">' + $content + '</p><div class="container-icons col-xs-offset-3 col-xs-8 col-sm-offset-2 col-sm-9"><p class="time col-xs-1 col-sm-1">' + $time + '</p><div class="icons col-xs-offset-7 col-sm-offset-8"><span><a href="#" data-toggle="tooltip" title="Me encanta"><img src="../assets/images/heart.svg" alt="heart"></a></span><span class="comment start-chat"><img src="../assets/images/chat.svg" alt="chat"></span></div></div></div><hr>');
     createComment();
     addComments();
   }
@@ -30,7 +30,7 @@ $(document).ready(function() {
   function createComment() {
     var $startChat = $('.start-chat');
     if ($startChat) {
-      $('section').find('div:first').append('<div class="comment-area3 comments" hidden><textarea class= "col-sm-3" id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" class="btn-coments col-sm-2" id="comment-btn">Comentar</button></div><div class= "comment-display-section col-sm-9"></div>');  
+      $('section').find('div:first').append('<div class="comment-area3 comments" hidden><textarea class= "col-sm-3" id="comment-txtarea" placeholder="Comentario..."></textarea><button type="button" name="button" class="btn-coments col-sm-3" id="comment-btn">Comentar</button></div><div class= "comment-display-section col-sm-offset-2 col-sm-9"></div>');  
       $startChat.on('click', function() {
         $('.comment-area3').toggle(); 
 

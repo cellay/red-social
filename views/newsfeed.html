@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Megrim|Mountains+of+Christmas|Share+Tech+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bellefair|Cookie|Dosis|Macondo|Pacifico|Sacramento|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/newsfeed.css">
     <title>Final Product</title>
 </head>
 
-<body>
+<body >
     <!--header-->
     <header>
         <div class="header clearfix">
@@ -25,23 +26,10 @@
                         </a>
                     </li>
                     <li role="presentation">
-                        <a href="profile.html">Mi perfil</a>
+                        <a href="miprofile.html">Mi perfil</a>
                     </li>
                     <li role="presentation">
-                        <a id="logout"">Salir</a>
-                    </li>
-                </ul>
-                <ul class="nav nav-pills pull-right visible-xs">
-                    <li role="presentation" class="bell">
-                        <a href="#">
-                            <img src="../assets/images/bell.svg" alt="bell">
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="profile.html"><img src="../assets/images/avatar-in.svg" alt="bell"></a>
-                    </li>
-                    <li role="presentation">
-                        <a href="final.html"><img src="../assets/images/logout.svg" alt="bell"></a>
+                        <a id="logout">Salir</a>
                     </li>
                 </ul>
             </nav>
@@ -51,22 +39,25 @@
     <!--contenido-->
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <div class="profile-div">
-                    <img class="center-block img-circle" src="../assets/images/velour.jpg" alt="user-picture">
-                    <h2 class="text-center">Velour</h2>
+                    <img class="center-block img-circle" src="../assets/images/women.jpg" alt="user-picture">
+                    <h3 class="text-center">Malika Favre</h3>
                     <hr>
                     <b>About:</b>
-                    <p><i class="fa fa-home" aria-hidden="true"></i> Vive en Peru</p>
-                    <p><i class="fa fa-briefcase" aria-hidden="true"></i> Trabaja en art & design</p>
-                    <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>   Diseñadora grafica</p>
+                    <p>
+                        <i class="fa fa-home" aria-hidden="true"></i> Vive en London</p>
+                    <p>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i> Trabaja en vogue, Aldo y Be Magazine</p>
+                    <p>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i> Diseñadora grafica</p>
                 </div>
             </div>
             <div class="col-sm-8 newsfeed">
                 <div class="area-post">
                     <div class="form-group">
                         <textarea class="form-control" rows="4" id="textarea" placeholder="Expresa tu creatividad..."></textarea>
-                        <button id="post" class="btn">Publicar</button>
+                        <button id="post" class="btn center-block">Publicar</button>
                     </div>
                 </div>
                 <hr>
@@ -75,22 +66,20 @@
                         <figure class="col-xs-3 col-sm-2">
                             <img src="../assets/images/paper-flower1.jpg" class="img-circle contact" alt="Profile">
                         </figure>
-                        <h3 class="col-xs-4 col-sm-3">
-                            <a href="profile1.html"></a>Paper my life</h3>
-                        <p class="col-xs-9 col-sm-10 text clearfix">Los dos van de la mano ya que el diseño y el arte se realizan con un fin aunque con otros parámetros.
-                            Tanto artistas como diseñadores crean composiciones visuales usando una base de conocimiento
-                            compartido.
+                        <h4 class="col-xs-4 col-sm-3">
+                            <a href="profile1.html">Paper my life</a></h4>
+                        <p class="col-xs-9 col-sm-10 text clearfix">Esta comunidad agrupa artistas en la red. En ella, el usuario puede mostrar su arte y recibir los comentarios y críticas de otros miembros de la comunidad.
                         </p>
                         <div class="container-icons col-xs-offset-3 col-xs-8 col-sm-offset-2 col-sm-9">
                             <p class="time col-xs-1 col-sm-1">12:10</p>
                             <div class="icons col-xs-offset-5 col-sm-offset-8">
-                                <span class="comment comment1">
-                                    <img src="../assets/images/chat.svg" alt="chat">
-                                </span>
                                 <span>
                                     <a href="#" data-toggle="tooltip" title="Me encanta">
                                         <img src="../assets/images/heart.svg" alt="heart">
                                     </a>
+                                </span>
+                                <span class="comment comment1">
+                                    <img src="../assets/images/chat.svg" alt="chat">
                                 </span>
                             </div>
                         </div>
@@ -103,29 +92,27 @@
                         <button type="button" name="button" class="btn-coments" id="comment-btn">Comentar</button>
                     </div>
                     <!-- Sección donde aparecerá el comentario hecho -->
-                    <div class="comment-display-section">
+                    <div class="comment-display-section comment-display1 newsfeed">
                     </div>
                     <hr>
                     <div class="clearfix newsfeed-contact">
                         <figure class="col-xs-3 col-sm-2">
-                            <img src="../assets/images/foto.jpg" class="img-circle contact" alt="Profile">
+                            <img src="../assets/images/velour.jpg" class="img-circle contact" alt="Profile">
                         </figure>
-                        <h3 class="col-xs-2 col-sm-2">
-                            <a href="profile.html"></a>Design It</h3>
-                        <p class="col-xs-9 col-sm-10 text clearfix">Los dos van de la mano ya que el diseño y el arte se realizan con un fin aunque con otros parámetros.
-                            Tanto artistas como diseñadores crean composiciones visuales usando una base de conocimiento
-                            compartido.
+                        <h4 class="col-xs-4 col-sm-3">
+                            <a href="profile.html">Velour</a></h4>
+                        <p class="col-xs-9 col-sm-10 text clearfix">Aqui, no sólo encontrarás a diseñadores gráficos, sino también a fotógrafos, pixel artists,pintores, artesanos, disfraces, etc.
                         </p>
                         <div class="container-icons col-xs-offset-3 col-xs-8 col-sm-offset-2 col-sm-9">
                             <p class="time col-xs-1 col-sm-1">12:10</p>
                             <div class="icons col-xs-offset-7 col-sm-offset-8">
-                                <span class="comment comment1">
-                                    <img src="../assets/images/chat.svg" alt="chat">
-                                </span>
                                 <span>
                                     <a href="#" data-toggle="tooltip" title="Me encanta">
                                         <img src="../assets/images/heart.svg" alt="heart">
                                     </a>
+                                </span>
+                                <span class="comment comment1">
+                                    <img src="../assets/images/chat.svg" alt="chat">
                                 </span>
                             </div>
                         </div>
@@ -138,7 +125,7 @@
                         <button type="button" name="button" class="btn-coments" id="comment-btn">Comentar</button>
                     </div>
                     <!-- Sección donde aparecerá el comentario hecho -->
-                    <div class="comment-display-section">
+                    <div class="comment-display-section comment-display1 newsfeed">
                     </div>
                 </section>
             </div>
@@ -153,7 +140,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="../js/moment.js"></script>
     <script src="../js/logout.js"></script>
     <script src="../js/newsfeed.js"></script>
