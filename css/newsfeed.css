@@ -4,24 +4,29 @@
     margin: 0;
 }
 body{
-    background-color:rgba(248, 177, 149, 0.3);
-    font-family: 'Bellefair', serif;
-    font-size: 17px;
+    background-color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+hr{
+    height: 1px;
+    background-color:rgb(206, 206, 206);
 }
 /*estilos del header*/
 .header{
-    margin-bottom: 10px;
-    background:linear-gradient(to bottom right, #6C567B, #C06C84);
+    margin-bottom: 12px;
+    background: linear-gradient(to bottom right,#3A0077 , rgb(56, 48, 216));
+    box-shadow: 6px 5px 6px -4px rgb(16, 1, 31);
 }
 header a, header h1{
-    color: white;
+    color: #FFFCEA;
 }
 header h1{
     font-family: 'Megrim', cursive;
     margin-left: 2%;
 }
 header li{
-    font-family: 'Bellefair', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 .bell img{
@@ -31,13 +36,14 @@ header li{
 .profile-div{
     width:100%;
     padding: 20px;
-    border: 1px solid rgba(184, 184, 184, 0.637);
+    border: 0.8px solid rgb(212, 212, 212);
     border-radius: 2px;
     background-color: white;
+    box-shadow: 6px 7px 6px -4px rgb(206, 206, 206);
 }
 .profile-div img{
-   width: 150px;
-   height: 150px;   
+   width: 200px;
+   height: 200px;   
 }
 .profile-div p img{
     margin-top:0; 
@@ -46,19 +52,16 @@ header li{
 /*Newsfeed*/
 .newsfeed{
     background-color: white;
-    border: 1px solid rgba(184, 184, 184, 0.637);
+    border: 0.8px solid rgb(212, 212, 212); 
     border-radius: 2px;
+    box-shadow: 6px 7px 6px -4px rgb(212, 212, 212);
 }
 .area-post{
-    /* outline: 1px solid red; */
-    /* background-color: rgba(248, 177, 149, 0.7); */
     margin-left: -15px;
     margin-right: -15px;
-    background-image: url('../assets/images/paisaje2.jpg');
-    /* background-image: url('../assets/images/Pozadina.png'); */
+    background-image: url('../assets/images/playa.jpg');
     background-repeat:no-repeat;
     background-size: cover;
-    /* background-position: bottom; */
 } 
 .contact{
     width: 80px;
@@ -66,26 +69,32 @@ header li{
 }
 .newsfeed-contact{
     margin-bottom: 30px;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 2px 3px 8px -1px rgb(206, 206, 206);
+    padding-top:20px; 
 }
 .newsfeed .form-group{
     padding: 20px;   
 }
-
 .btn {
-    background: #6C567B;
-    border:none;
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 200;
+    background: #A5F2E7;
+    border:1px solid rgb(215, 245, 240);
+    border-radius: 7px;
+    color: rgb(20, 20, 20);
+    font-size: 17px;
+    font-weight: 700;
     transition: box-shadow .4s ease;
     margin-bottom: 20px;
     margin-top: 10px;
-    font-family: 'Bellefair', serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
 .btn:hover {
     box-shadow: 1px 1px 5px #555;
     background-color: whitesmoke;
+}
+.profile-div p i{
+    color: black;
 }
 .follow{
     margin-left: 2px;
@@ -94,6 +103,7 @@ header li{
     margin-top: 6px;
     padding: 0px;
 }  
+
 .icon-follow{
     width: 20px;
 }
@@ -102,7 +112,6 @@ header li{
     display: block;
     height: 60px;
     padding: 5px;
-
 }
 .icons span{
     margin:2px 12px;
@@ -119,24 +128,28 @@ header li{
 .comments{
     margin-left: 19%;
 }
-.parapgrah-comment{
-    margin-left: 19%;
+.comment-display-section{
+    height: auto;
+    padding-left:8px; 
+}
+.parapgrah-comment{   
     width: 100%;
     height: auto;
 }
+
 .text{
     margin-bottom: 5px;
 }
 .btn-coments{
-    background: rgba(192, 108, 132, 0.692);
+    background: #A5F2E7;;
     border:none;
     border-radius: 5px;
-    color: whitesmoke;
+    color: rgb(12, 12, 12);
     font-size: 18px;
     font-weight: 200;
     transition: box-shadow .4s ease;
-    font-family: 'Bellefair', serif;
-    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 15px;
 }
 .btn-coments:hover {
     color: #555;

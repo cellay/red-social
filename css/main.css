@@ -1,0 +1,132 @@
+/* CSS */
+* {
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+}
+
+header {
+  /* width: 100%;
+  background:linear-gradient(to bottom right, #6C567B, #C06C84);
+  background-position: left top; */
+  color: whitesmoke;
+  font-family: 'Bellefair', cursive;
+  font-size: 1.5em;
+  float: right;
+  height: 10vh;
+}
+
+.nav {
+  margin: auto 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color:  whitesmoke;
+}
+
+.nav:hover {
+  background:linear-gradient(to bottom right, #6C567B, #C06C84);
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: snow;
+  color: whitesmoke;
+  transform: translateY(5px);
+}
+
+body {
+  text-align: center;
+  background: transparent url('../assets/images/background-web.jpg');
+  height: 80vh;
+}
+
+.principal-view {
+  height: 85vh;
+  width: 100%;
+  color: #6C567B;
+}
+
+section {
+  height: auto;
+}
+
+footer {
+  color: whitesmoke;
+  font-family: 'Bellefair', serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  height: 5vh;
+}
+
+.logo-box {
+  background-color: rgba(0, 0, 0, 0);
+  color: whitesmoke;
+  font-family: 'Megrim', cursive;
+  font-size: 3.7em;
+  font-weight: bolder;
+  text-align: center;
+  align-content: center;
+  height: 80vh;  
+}
+
+.register-box {
+  align-content: center;
+  height: 80vh;
+  font-family: 'Bellefair', serif;
+  width: 100%;
+}
+
+.form-group {
+  align-content: center;
+  background-color: rgba(238, 210, 200, 0.7);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #6C567B;
+  font-family: 'Bellefair', serif;
+}
+
+input[type="email"], input[type="password"] {
+  border: 1px solid #bbb;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  }
+  
+.btn {
+  background: linear-gradient(to bottom right, #6C567B, #C06C84);
+  border:none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 200;
+  transition: box-shadow .4s ease;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 5px #555;
+  background-color: whitesmoke;
+}
+
+.login-facebook-google {
+  color: #6C567B;
+  font-family: 'Bellefair', serif;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.login-facebook-google img {
+  align-self: center;
+  height: 50px;
+  margin: 20px auto;
+} 
+
+.login-facebook-google img:hover {
+  border-radius: 250px;
+  box-shadow: 5px 10px rgba(192, 108, 132, 0.8);
+}

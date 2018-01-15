@@ -1,113 +1,217 @@
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Profile</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="../css/profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile - Velour</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Megrim|Mountains+of+Christmas|Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
   <!-- Encabezado -->
-  <header>
-        <div class="header clearfix">
-            <nav>
+    <header>
+        <div class="clearfix">
+            <!-- Título de página -->
+            <h1><a href="newsfeed.html" class="logo-name pull-left">beCreative</a></h1>
+            <!-- Área de navegación -->
+            <nav class="pull-right">
                 <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="bell">
-                        <a href="#">
-                            <img src="../assets/images/bell.svg" alt="bell">
+                    <li role="presentation" class="bell-icon">
+                      <a href="#" class="header-links hidden-xs">Notificaciones</a>
+                      <a href="#" class="header-links visible-xs">
+                          <img src="../assets/images/bell.svg" alt="bell">
+                      </a>
+                    </li>
+                    <li role="presentation" class="news-icon">
+                        <a href="newsfeed.html" class="header-links hidden-xs">Noticias</a>
+                        <a href="newsfeed.html" class="header-links visible-xs">
+                          <img src="../assets/images/news.svg" alt="news">
                         </a>
                     </li>
-                    <li role="presentation">
-                        <a href="newsfeed.html" target="_blank">Noticias</a>
+                    <li role="presentation" class="chat-icon">
+                        <a href="chat.html" class="header-links hidden-xs">Chat</a>
+                        <a href="chat.html" class="header-links visible-xs">
+                          <img src="../assets/images/chatprofile-icon.svg" alt="chat">
+                        </a>
                     </li>
-                    <li role="presentation">
-                        <a href="#">Salir</a>
+                    <li role="presentation" class="logout-icon">
+                        <a id="logout" class="header-links hidden-xs">Salir</a>
+                        <a id="logout" class="header-links visible-xs">
+                          <img src="../assets/images/logout1.svg" alt="logout">
+                        </a>
                     </li>
                 </ul>
             </nav>
-            <h3 class="text-muted">beCreative</h3>
         </div>
     </header>
 
-  <!-- Perfil en miniatura -->
-  <section class="container-fluid profile-min">
-    <div class="row">
-          <div class="profile-con col-xs-12  col-md-12">
-            <figure>
-              <img class="center-block img-circle user-picture" src="http://www.gigtime.co/assets/fallback/default_user_avatar_huge.jpg" alt="user-picture">
-              <figcaption class="text-center">
-                Nombre
-              </figcaption>
-            </figure>
+    <!-- Perfil en miniatura -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="white-box col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+                    <div class="white-box">
+                    <figure>
+                        <img class="center-block img-circle user-picture" src="../assets/images/velour.jpg" alt="user-picture">
+                        <br>
+                        <figcaption class="text-center" id="user-name">
+                        Velour
+                            <span class="follow" href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <div class="profile-info text-center visible-sm visible-md visible-lg">
+                        <a href="http://sashavelour.com/">Visita mi página</a>
+                        <br>
+                        <br>
+                        <p><i class="fa fa-home" aria-hidden="true"></i> Vive en EEUU</p>
+                        <p><i class="fa fa-briefcase" aria-hidden="true"></i> Trabaja en Velour Magazine</p>
+                        <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>   Diseñadora grafica</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de creación de publicaciones -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="white-box col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+                    <!-- Sección de creación de publicaciones -->
+                    <div class="post-section">
+                        <div>
+                            <!-- Área para escribir contenido de publicación -->
+                            <textarea name="name" class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 post-txtarea" id="post-txtarea" placeholder="Expresa tu creatividad..."></textarea>
+                            <br>
+                            <!-- Área para subir fotos -->
+                            <label class="btn btn-file icon-btn col-xs-3 col-sm-3 col-md-3 col-lg-3 visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
+                                <input class="hidden" id="file" name="camera" value="camera" type="file" accept="image/gif,image/jpeg,image/jpg,image/png,video/mp4,video/quicktime,video/x-m4v">
+                                <img src="../assets/images/photo-camera.svg" class="camera-icon" alt="upload image">
+                            </label>
+                            <!-- Botón para publicar -->
+                            <button type="send" name="button" class="post-btn visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" id="post-btn" disabled>Publicar</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Sección de fotos y publicaciones -->
+                    <div class="photo-post-section col-xs-12 col-md-12">
+                        <!-- Contenedor de la publicación -->
+                        <div class="post-container">
+                            <!-- Imagen miniatura de usuario en publicación -->
+                            <!-- <figure class="user-picture-container col-xs-2 col-md-2">
+                                <img class="img-circle user-picture-post img-responsive" src="../assets/images/velour.jpg" alt="user-picture">
+                            </figure> -->
+                            <!-- Envolvedor de publicación -->
+                            <div class="post-wrapper col-xs-12 col-md-12">
+                                <div class="row">
+                                  <!-- Publicación -->
+                                  <p class="col-xs-12 col-sm-12 col-md-12">Velour Art</p>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <img class="col-sm-5 pic-test img-responsive"  src="../assets/images/velour.jpg" alt="gaga-velour">
+                                  <div class="myprofile-carousel">
+                                    <!--carousel-->
+                                    <div class="col-sm-5 malika-carousel">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            </ol>
+                
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img class="pic-test img-responsive"  src="../assets/images/gaga-velour.jpg" alt="gaga-velour">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="pic-test img-responsive"  src="../assets/images/gaga-velour.jpg" alt="gaga-velour">
+                                                </div>
+                                            </div>
+                
+                                            <!-- Left and right controls -->
+                                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <span class="col-xs-1 col-sm-1 col-md-1"> 12:25
+                                    </span>
+                                    <div class="icons-wrapper col-xs-push-1 col-xs-offset-6 col-sm-offset-7 col-sm-3">
+                                        <!-- Ícono para dar like -->
+                                        <a class="heart" href="#">
+                                          <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart">
+                                        </a>
+                                        <!-- Ícono para dar like pintado -->
+                                        <a class="colored-heart" href="#" hidden>
+                                          <img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart">
+                                        </a>
+                                        <!-- Ícono para comentar -->
+                                        <a class="comment-bubble" href="#">
+                                          <img src="../assets/images/chat.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de fotos y publicaciones -->
+    <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="">
+
+            </div>
           </div>
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <!-- Sección de creación de publicaciones -->
-  <section class="post-section">
-    <div>
-      <!-- Área para escribir contenido de publicación -->
-      <textarea name="name" class="center-block post-txtarea" id="post-txtarea" placeholder="¿Qué arte quieres compartir hoy?"></textarea>
-      <input type="file" name="" value="">
-      <!-- Botón para publicar -->
-      <button type="send" name="button" class="center-block post-btn" id="post-btn">Publicar</button>
-    </div>
-  </section>
+    <!-- Pie de página -->
+    <footer class="footer text-center">
+      <p class="footer-text">Copyright&copy; beCreative 2018</p>
+    </footer>
 
-  <!-- Sección de fotos y publicaciones -->
-  <section class="photo-post-section">
-    <!-- Contenedor de la publicación -->
-    <div class="post-container">
-      <!-- Publicación -->
-      <p>Primera publicación</p>
-      <!-- Ícono para dar like -->
-      <a class="heart" href="#">
-        <img src="https://image.flaticon.com/icons/png/128/149/149217.png" alt="heart">
-      </a>
-      <!-- Ícono para dar like pintado -->
-      <a class="colored-heart" href="#" hidden>
-        <img src="https://image.flaticon.com/icons/png/128/214/214309.png" alt="colored-heart">
-      </a>
-      <!-- Ícono para comentar -->
-      <a class="comment-bubble" href="#">
-        <img src="https://image.flaticon.com/icons/svg/134/134784.svg">
-      </a>
-      <!-- Sección para realizar comentario -->
-      <div class="comment-side" hidden>
-        <!-- Área para escribir comentario -->
-        <textarea name="name" class="center-block post-txtarea" id="comment-txtarea" placeholder="Comentario..."></textarea>
-        <!-- Botón para enviar comentario -->
-        <button type="button" name="button" id="comment-btn">Comentar</button>
+      <!-- Ventana emergente que indica que se ha agredado a un contacto -->
+      <div id="contact-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div id="contact-modal-content" class="modal-content">
+            <p class="text-center">Se ha enviado solicitud de amistad</p>
+          </div>
+        </div>
       </div>
-      <!-- Sección donde aparecerá el comentario hecho -->
-      <div class="comment-display-section">
 
-      </div>
-    </div>
-  </section>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/profile.js">
+    </script>
+    <script type="text/javascript" src="../js/moment.js">
 
-  <!-- Pie de página -->
-  <footer class="footer text-center">
-    <p>&copy; 2016 Company, Inc.</p>
-  </footer>
-
-  <!-- Modal de comentar -->
-  <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-      ...
-      </div>
-    </div>
-  </div> -->
-
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/profile.js">
-
-</script>
-</body>
-</html>
+    </script>
+  </body>
+  </html>
