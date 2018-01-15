@@ -3,7 +3,7 @@ header {
     /* background:linear-gradient(to bottom right, #6C567B, #C06C84); */
     background-position: left top;
     color: whitesmoke;
-    font-family: 'Megrim', cursive;
+    font-family: 'Lobster', cursive;
     padding-left: 2%;
     background: linear-gradient(to bottom right,#3A0077 , #8983F3);
     box-shadow: 6px 5px 6px -4px rgb(16, 1, 31);
@@ -28,7 +28,7 @@ h1, nav {
 
 .header-links {
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.250em;
 }
 
@@ -36,7 +36,7 @@ h1, nav {
 section {
     /* background-color: rgba(248, 177, 149, 0.3); */
     background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     padding: 2%;
 }
@@ -153,7 +153,7 @@ button:hover {
 /* Pie de página */
 footer {
   color: #6C567B;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   /* font-weight: 800; */
