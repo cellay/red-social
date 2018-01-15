@@ -64,13 +64,16 @@
 }
 
 .super-heading {
-  font-size: 90px;
+  font-size: 4em;
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bolder;
+  color: whitesmoke;
 }
 
 .super-paragraph {
-  font-size: 30px; font-weight: 300;
+  font-size: 2em;
+  font-weight: 300;
+  color: rgb(214, 243, 239);
 }
 
 .carousel-caption .super-paragraph a,
@@ -85,6 +88,22 @@
 
 .logo-font {
   font-family: 'Lobster', sans-serif;
+  font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  .logo-font {
+    font-family: 'Lobster', sans-serif;
+    font-size: 2.5em;
+  }
+
+  .super-paragraph {
+    font-size: 1.5em;
+  }
+  .super-heading {
+    font-size: 2em;
+  }
+
 }
 
 .d-flex {
@@ -108,9 +127,10 @@ body {
 .principal-view {
   height: 85vh;
   width: 100%;
-  color: #2d0946;
+  color:  rgb(62, 27, 99);
   font-size: 15px;
   font-weight: 700;
+  text-shadow: none;
 }
 
 section {
