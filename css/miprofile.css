@@ -68,7 +68,7 @@ section {
 }
 .newsfeed{
     background-color: white;
-    border: 0.8px solid rgb(212, 212, 212); 
+    border: 0.8px solid rgb(212, 212, 212);
     border-radius: 2px;
     margin-bottom: 10px;
 }
@@ -164,4 +164,10 @@ footer {
   /* font-weight: 800; */
   height: 5vh;
   padding: 1.5em;
+}
+
+/* Modal */
+#contact-modal-content {
+    padding: 1em !important;
+    background-color: rgba(248, 177, 149, 0.8);
 }
