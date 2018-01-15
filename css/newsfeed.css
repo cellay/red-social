@@ -5,7 +5,7 @@
 }
 body{
     background-color:rgba(248, 177, 149, 0.3);
-    font-family: 'Bellefair', serif;
+    font-family: 'Roboto', serif;
     font-size: 17px;
 }
 /*estilos del header*/
@@ -17,11 +17,11 @@ header a, header h1{
     color: white;
 }
 header h1{
-    font-family: 'Megrim', cursive;
+    font-family: 'Lobster', cursive;
     margin-left: 2%;
 }
 header li{
-    font-family: 'Bellefair', serif;
+    font-family: 'Roboto', serif;
     font-size: 20px;
 }
 .bell img{
@@ -80,7 +80,7 @@ header li{
     transition: box-shadow .4s ease;
     margin-bottom: 20px;
     margin-top: 10px;
-    font-family: 'Bellefair', serif;
+    font-family: 'Roboto', serif;
   }
   
 .btn:hover {
@@ -135,7 +135,7 @@ header li{
     font-size: 18px;
     font-weight: 200;
     transition: box-shadow .4s ease;
-    font-family: 'Bellefair', serif;
+    font-family: 'Roboto', serif;
     padding: 5px 10px;
 }
 .btn-coments:hover {
