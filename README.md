@@ -14,10 +14,10 @@ El reto consiste en realizar una red social mobile friendly con la ayuda del fra
 
 #### Vista inicial de inicio de sesión o registro
 * Versión de computadora
-![Sin titulo](assets/docs/sign-in-desktop.jpeg)
+![Sin titulo](assets/docs/signin.JPG)
 
-* Versión de móvil
-![Sin titulo](assets/docs/sign-in-mobile.jpeg)
+<!-- * Versión de móvil
+![Sin titulo](assets/docs/sign-in-mobile.jpeg) -->
 
 #### Vista de noticias para ver las actualizaciones de amigos artistas con opción a agregar contacto, publicar, comentar y dar y quitar me gusta
 ![Sin titulo](assets/docs/newsfeed-view.png)
@@ -27,10 +27,8 @@ El reto consiste en realizar una red social mobile friendly con la ayuda del fra
 
 
 #### Vista para agregar contacto
-![Sin titulo](assets/docs/add-contact.JPG)
+![Sin titulo](assets/docs/adding-contact.JPG)
 
-#### Vista final de cerrar sesión
-![Sin titulo](assets/docs/log-out.JPG)
 
 ## Autora
 * Ornella Campos
