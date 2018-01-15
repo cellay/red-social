@@ -29,7 +29,7 @@ var dataImage= firebase.database().ref('imagePost');
             });
 
             $('.photo-post-section').append('<img class = "uploadImg" style="height:auto;width:400px" src="" alt="">');
-            $('.uploadImg').attr('src', e.target.result);
+            $('.post-wrapper').attr('src', e.target.result);
           };
           watcher.readAsDataURL(this.files[0])
       }
